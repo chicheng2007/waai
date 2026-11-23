@@ -91,6 +91,8 @@
 
 ## 4.4 每天 30 分钟 AI 底子（两件事）
 
+> **系统的 Python 学习路线见 [resources/python-roadmap.md](../resources/python-roadmap.md)** —— 七个台阶，软考期主攻台阶 1~4。下面只是本阶段的每日安排摘要。
+
 **① Python 进阶（20 分钟）**
 从"会语法"到"能处理数据"：
 - 熟练用 `list` / `dict` 存取数据、列表推导式
