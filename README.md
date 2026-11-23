@@ -37,6 +37,7 @@
 - [04 · 大模型 / Agent](roadmap/04-llm-agent.md) —— Transformer + Agent 双重身份 + 学习路径
 
 **📚 资源库（按需查）**
+- 🐍 **[Python 学习路线](resources/python-roadmap.md)** —— 从会语法到能写网安/AI 脚本，七个台阶 + 每日安排
 - [书籍推荐](resources/booklist.md) —— 按阶段 × 优先级，标注必读 / 选读
 - [链接速查表](resources/links.md) —— 课程 / 靶场 / 工具 / 数据集 / 社区的直达链接
 
@@ -78,6 +79,7 @@
 ## 语言与工具取舍
 
 - **语言**：大二专精 Python、保持 C++；Go / Rust 大三后按方向再学
+- **Python 怎么学**：见 [Python 学习路线](resources/python-roadmap.md) —— 三条线的共同底座，优先练熟
 - **取证**：以火眼证据分析为主线，不盲目堆工具
 - **AI**：先传统机器学习，再深度学习，最后大模型 / Agent
 
