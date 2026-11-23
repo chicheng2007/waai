@@ -38,6 +38,7 @@
 
 **📚 资源库（按需查）**
 - 🐍 **[Python 学习路线](resources/python-roadmap.md)** —— 从会语法到能写网安/AI 脚本，七个台阶 + 每日安排
+- 💻 **[硬件与本地环境](resources/hardware-setup.md)** —— 你的 R9000P 5060 能跑什么、GPU 版 PyTorch 怎么装、本地跑模型
 - [书籍推荐](resources/booklist.md) —— 按阶段 × 优先级，标注必读 / 选读
 - [链接速查表](resources/links.md) —— 课程 / 靶场 / 工具 / 数据集 / 社区的直达链接
 
