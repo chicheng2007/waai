@@ -7,7 +7,7 @@
 ---
 
 ## 6.1 深度学习基础
-- **框架**：PyTorch（装 CPU 版即可：`pip install torch`，不用显卡）
+- **框架**：PyTorch（你的 RTX 5060 有 8GB 显存，直接装 CUDA 版用 GPU 训练，比 CPU 快一个数量级。安装方法见[硬件与本地环境](../resources/hardware-setup.md)）
 - **课程**：李沐《动手学深度学习》（B 站视频 + 配套电子书 d2l.ai）
 - **重点章节**：
   - 多层感知机（MLP）—— 基础
