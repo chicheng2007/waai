@@ -3,7 +3,7 @@
 > 目标：从"只会基础语法"到"能用 Python 解决网安和 AI 的实际问题"。
 > 定位：Python 是软考之外**三条线的共同底座**——AI 全靠它，CTF 脚本、取证分析、日志处理也都靠它。这门语言练熟了，后面三条线都会顺。
 
-**导航**：[00 总览](../roadmap/00-overview.md) · [01 软考期](../roadmap/01-soft-exam.md) · [书单](booklist.md) · [链接速查表](links.md) · [打卡](../checkin-log.md)
+**导航**：[00 总览](../roadmap/00-overview.md) · [01 软考期](../roadmap/01-soft-exam.md) · [书单](../reference/booklist.md) · [链接速查表](../reference/links.md) · [打卡](../checkin-log.md)
 
 ---
 
@@ -146,7 +146,7 @@ print(df.groupby("label").size())      # 按标签分组计数
 print(df["duration"].describe())       # 数值列统计
 ```
 
-**网安结合**：拿 KDD99 / CIC-IDS2017 数据集（见[链接速查表](links.md#四数据集)），用 pandas 读进来，看看每条连接记录有哪些字段、正常和攻击各多少。
+**网安结合**：拿 KDD99 / CIC-IDS2017 数据集（见[链接速查表](../reference/links.md#四数据集)），用 pandas 读进来，看看每条连接记录有哪些字段、正常和攻击各多少。
 
 **自测**：能用 pandas 读入一个数据集，做分组统计并画出一张柱状图。
 
@@ -235,8 +235,8 @@ print(r.text[:200])
 
 ## 十二、资源
 
-- **书**：《Python 编程：从入门到实践》基础篇（见[书单](booklist.md)）——语法查漏用，别通读
-- **在线教程 / 课程链接**：见[链接速查表](links.md#二ai-课程与数学视频)
+- **书**：《Python 编程：从入门到实践》基础篇（见[书单](../reference/booklist.md)）——语法查漏用，别通读
+- **在线教程 / 课程链接**：见[链接速查表](../reference/links.md#二ai-课程与数学视频)
 - **正则练习**：regex101.com（在线调试正则）
 - **刷题**：LeetCode 简单题（练思维）、Hackerrank Python 专项（练语法）
 - **报错 / 不懂**：直接问你的 AI 助手，把报错原文贴给它

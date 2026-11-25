@@ -2,12 +2,12 @@
 
 > 用 PyTorch 搭网络，然后把 AI 用到你熟悉的网安场景——这是写进简历的关键阶段。
 
-**导航**：[00 总览](00-overview.md) · [01 软考期](01-soft-exam.md) · [02 传统机器学习](02-ml-basics.md) · **03 深度学习** · [04 大模型/Agent](04-llm-agent.md) · [书单](../resources/booklist.md) · [链接](../resources/links.md)
+**导航**：[00 总览](00-overview.md) · [01 软考期](01-soft-exam.md) · [02 传统机器学习](02-ml-basics.md) · **03 深度学习** · [04 大模型/Agent](04-llm-agent.md) · [书单](../reference/booklist.md) · [链接](../reference/links.md)
 
 ---
 
 ## 6.1 深度学习基础
-- **框架**：PyTorch（你的 RTX 5060 有 8GB 显存，直接装 CUDA 版用 GPU 训练，比 CPU 快一个数量级。安装方法见[硬件与本地环境](../resources/hardware-setup.md)）
+- **框架**：PyTorch（你的 RTX 5060 有 8GB 显存，直接装 CUDA 版用 GPU 训练，比 CPU 快一个数量级。安装方法见[硬件与本地环境](../reference/hardware-setup.md)）
 - **课程**：李沐《动手学深度学习》（B 站视频 + 配套电子书 d2l.ai）
 - **重点章节**：
   - 多层感知机（MLP）—— 基础

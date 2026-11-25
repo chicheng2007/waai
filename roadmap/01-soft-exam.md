@@ -2,7 +2,7 @@
 
 > 这是当前主线。软考是网络地基，必须先拿下；同时网安基础从零起步、AI 每天打底 30 分钟。
 
-**导航**：[00 总览](00-overview.md) · **01 软考期** · [02 传统机器学习](02-ml-basics.md) · [03 深度学习](03-deep-learning.md) · [04 大模型/Agent](04-llm-agent.md) · [书单](../resources/booklist.md) · [链接](../resources/links.md)
+**导航**：[00 总览](00-overview.md) · **01 软考期** · [02 传统机器学习](02-ml-basics.md) · [03 深度学习](03-deep-learning.md) · [04 大模型/Agent](04-llm-agent.md) · [书单](../reference/booklist.md) · [链接](../reference/links.md)
 
 ---
 
@@ -91,7 +91,7 @@
 
 ## 4.4 每天 30 分钟 AI 底子（两件事）
 
-> **系统的 Python 学习路线见 [resources/python-roadmap.md](../resources/python-roadmap.md)** —— 七个台阶，软考期主攻台阶 1~4。下面只是本阶段的每日安排摘要。
+> **系统的 Python 学习路线见 [tools/python-roadmap.md](../tools/python-roadmap.md)** —— 七个台阶，软考期主攻台阶 1~4。下面只是本阶段的每日安排摘要。
 
 **① Python 进阶（20 分钟）**
 从"会语法"到"能处理数据"：

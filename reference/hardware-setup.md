@@ -3,7 +3,7 @@
 > 你的设备：联想拯救者 R9000P 2025 · RTX 5060（8GB 显存）+ R9 9955HX（16 核 32 线程）+ 32GB DDR5 + 1TB SSD。
 > 结论先说：**这是一台很能打的 AI 学习本**，不是"够不够用"，而是"用得很好"。别再觉得需要加钱换设备。
 
-**导航**：[00 总览](../roadmap/00-overview.md) · [03 深度学习](../roadmap/03-deep-learning.md) · [Python 路线](python-roadmap.md) · [链接速查表](links.md) · [打卡](../checkin-log.md)
+**导航**：[00 总览](../roadmap/00-overview.md) · [03 深度学习](../roadmap/03-deep-learning.md) · [Python 路线](../tools/python-roadmap.md) · [链接速查表](links.md) · [打卡](../checkin-log.md)
 
 ---
 
@@ -66,7 +66,7 @@ print(torch.cuda.get_device_name(0))    # 应显示 RTX 5060
   conda create -n ai python=3.11
   conda activate ai
   ```
-- 每个项目一个环境，配 `requirements.txt` 方便复现（见 [Python 路线 · 台阶 6](python-roadmap.md#八台阶-6工程化全程穿插)）。
+- 每个项目一个环境，配 `requirements.txt` 方便复现（见 [Python 路线 · 台阶 6](../tools/python-roadmap.md#八台阶-6工程化全程穿插)）。
 
 > ⚠️ 常见坑：PyTorch 的 CPU 版和 CUDA 版不能混装。如果之前装过 CPU 版，先卸载干净再装 CUDA 版。`pip uninstall torch torchvision torchaudio` 后重装。
 

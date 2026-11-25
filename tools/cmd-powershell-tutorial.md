@@ -3,7 +3,7 @@
 > 写给"只会双击图标、一让敲命令就慌"的 Windows 用户。从零讲清 CMD 和 PowerShell 是什么、该学哪个、常用命令怎么用，并结合网安、Python、Git 的真实场景。
 > 你不需要背下所有命令——**理解思路 + 常用命令查表**就够了。
 
-**导航**：[仓库 README](../README.md) · [Git 教程](git-tutorial.md) · [Python 路线](python-roadmap.md) · [14 天实战](../START-HERE.md) · [硬件环境](hardware-setup.md)
+**导航**：[仓库 README](../README.md) · [Git 教程](git-tutorial.md) · [Python 路线](python-roadmap.md) · [14 天实战](../START-HERE.md) · [硬件环境](../reference/hardware-setup.md)
 
 ---
 

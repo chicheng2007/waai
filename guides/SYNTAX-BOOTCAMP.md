@@ -1,10 +1,10 @@
 # 3 天语法急救包 · 读懂代码就够了
 
 > **给谁**：只会 `print`、变量赋值，一看 `for` / `.split()` 就懵的人。
-> **目标**：不学完整语法书，只搞定**读代码必备的 5 个零件**。3 天后，你能读懂 [START-HERE.md](START-HERE.md) 里 14 天计划的大部分代码。
+> **目标**：不学完整语法书，只搞定**读代码必备的 5 个零件**。3 天后，你能读懂 [START-HERE.md](../START-HERE.md) 里 14 天计划的大部分代码。
 > **怎么用**：每天照着把代码**粘进 PyCharm 跑一遍**，对着"预期输出"认每个零件。别只看，一定要跑。
 
-**导航**：[README](README.md) · [回到实战计划 START-HERE](START-HERE.md) · [每日打卡](checkin-log.md)
+**导航**：[README](../README.md) · [回到实战计划 START-HERE](../START-HERE.md) · [每日打卡](../checkin-log.md)
 
 ---
 
@@ -189,7 +189,7 @@ for line in lines:                        # 再一行行发牌
     print("当前行:", line[:30])           # line[:30] 只显示前 30 个字符
 ```
 
-**动手改一改**：把 `print("当前行:", line[:30])` 改成 `print("IP是:", line.split()[0])`，看看会发生什么——这就是 [START-HERE 第 1 天](START-HERE.md) 提取 IP 的核心代码。
+**动手改一改**：把 `print("当前行:", line[:30])` 改成 `print("IP是:", line.split()[0])`，看看会发生什么——这就是 [START-HERE 第 1 天](../START-HERE.md) 提取 IP 的核心代码。
 
 ---
 
@@ -200,7 +200,7 @@ for line in lines:                        # 再一行行发牌
 - [ ] 我能解释 `for line in ...` 每次在干什么
 - [ ] 我跑通了 `day1_d.py`
 
-在 [checkin-log.md](checkin-log.md) 追加一行：`语法急救 第1天`。
+在 [checkin-log.md](../checkin-log.md) 追加一行：`语法急救 第1天`。
 
 ---
 
@@ -270,7 +270,7 @@ print(counts)
 
 **`.get(ip, 0)` 的意思**："查 ip 的值；如果没有这个 ip，就当它是 0"。这样第一次也不会报错。整行就是"**这个 IP 的次数加 1**"。
 
-> 这就是 [START-HERE 第 1 天](START-HERE.md) 那个 `Counter` 计数的手写版，本质一样。
+> 这就是 [START-HERE 第 1 天](../START-HERE.md) 那个 `Counter` 计数的手写版，本质一样。
 
 ---
 
@@ -319,7 +319,7 @@ for ip, n in counts.items():                  # items() 把字典拆成一对对
 
 **新东西**：`for ip, n in counts.items()` —— `items()` 把字典变成一对对的"(键, 值)"，`ip` 接键、`n` 接值。也是发牌，一次发两个。
 
-看懂这段，你就已经写出了 [START-HERE 第 1 天](START-HERE.md) 的核心功能。
+看懂这段，你就已经写出了 [START-HERE 第 1 天](../START-HERE.md) 的核心功能。
 
 ---
 
@@ -330,7 +330,7 @@ for ip, n in counts.items():                  # items() 把字典拆成一对对
 - [ ] 我会用 f-string 往字符串塞变量
 - [ ] 我跑通了 `day2_c.py`，看到了 IP 统计结果
 
-在 [checkin-log.md](checkin-log.md) 追加一行：`语法急救 第2天`。
+在 [checkin-log.md](../checkin-log.md) 追加一行：`语法急救 第2天`。
 
 ---
 
@@ -404,13 +404,13 @@ print(result)
 {'192.168.1.100': 2, '10.0.0.5': 1, '45.33.22.11': 1}
 ```
 
-这就是 [START-HERE 第 4 天](START-HERE.md)"封装成函数"的样子。**你已经会了。**
+这就是 [START-HERE 第 4 天](../START-HERE.md)"封装成函数"的样子。**你已经会了。**
 
 ---
 
 ## 终极检验：读一段计划里的真代码
 
-下面是 [START-HERE 第 3 天](START-HERE.md) 的真实代码片段。现在试着**逐行讲出来**（讲不出来就回看对应零件）：
+下面是 [START-HERE 第 3 天](../START-HERE.md) 的真实代码片段。现在试着**逐行讲出来**（讲不出来就回看对应零件）：
 
 ```python
 import re
@@ -440,7 +440,7 @@ for ip, n in suspicious.items():                 # ⑦ 字典拆成一对对发�
 | ⑤⑥ | 第 2 天：字典计数 |
 | ⑦⑧ | 第 2 天：`items()` + f-string |
 
-**能不能读懂？** 如果能讲出七八成，恭喜——**你已经具备读实战代码的能力了**，可以回去 [START-HERE](START-HERE.md) 正式开始 14 天计划。遇到没见过的语法（比如正则），照样用生活比喻的思路问本地模型："用切香肠/发牌这种打比方，讲讲这行在干嘛。"
+**能不能读懂？** 如果能讲出七八成，恭喜——**你已经具备读实战代码的能力了**，可以回去 [START-HERE](../START-HERE.md) 正式开始 14 天计划。遇到没见过的语法（比如正则），照样用生活比喻的思路问本地模型："用切香肠/发牌这种打比方，讲讲这行在干嘛。"
 
 ---
 
@@ -451,7 +451,7 @@ for ip, n in suspicious.items():                 # ⑦ 字典拆成一对对发�
 - [ ] 第 3 天：能定义函数、能读懂终极检验代码
 - [ ] 3 天代码全部亲手跑过（不是只看）
 
-**全部打勾 → 回到 [START-HERE.md](START-HERE.md) 开始第 0 天。** 那时候你会发现代码不再是天书。
+**全部打勾 → 回到 [START-HERE.md](../START-HERE.md) 开始第 0 天。** 那时候你会发现代码不再是天书。
 
 ---
 
@@ -461,4 +461,4 @@ for ip, n in suspicious.items():                 # ⑦ 字典拆成一对对发�
 
 ---
 
-*制定：2026-11-25 · 配合 [每日打卡](checkin-log.md) 使用，每天学完打一次卡。*
+*制定：2026-11-25 · 配合 [每日打卡](../checkin-log.md) 使用，每天学完打一次卡。*

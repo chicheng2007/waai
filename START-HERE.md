@@ -1,11 +1,11 @@
 # 从这里开始 · 网安实战版（14 天做出一个能写进简历的项目）
 
-> **前置**：如果你一看 `for line in ...split()` 就懵，先花 3 天看 [SYNTAX-BOOTCAMP.md（语法急救包）](SYNTAX-BOOTCAMP.md)，用"发牌/切香肠"讲懂 5 个必备零件，再回来做这个计划。
+> **前置**：如果你一看 `for line in ...split()` 就懵，先花 3 天看 [SYNTAX-BOOTCAMP.md（语法急救包）](guides/SYNTAX-BOOTCAMP.md)，用"发牌/切香肠"讲懂 5 个必备零件，再回来做这个计划。
 >
 > **默认你会基础语法**（变量 / 循环 / 函数不再从头讲）——不敲 `print` 玩语法。**14 天，每天一个真任务，最后交付一个完整的"AI 日志研判工具"到 GitHub。**
 > 只在项目里卡住的地方问本地模型（求助流程在下面），边做边补。
 
-**导航**：[README](README.md) · [每日打卡](checkin-log.md) · [Python 路线](resources/python-roadmap.md) · [硬件环境](resources/hardware-setup.md) · [总览](roadmap/00-overview.md)
+**导航**：[README](README.md) · [每日打卡](checkin-log.md) · [Python 路线](tools/python-roadmap.md) · [硬件环境](reference/hardware-setup.md) · [总览](roadmap/00-overview.md)
 
 ---
 

@@ -2,7 +2,7 @@
 
 > 这一阶段正式进入 AI。先传统 ML，不碰深度学习——原理简单、见效快、网安领域大量使用。
 
-**导航**：[00 总览](00-overview.md) · [01 软考期](01-soft-exam.md) · **02 传统机器学习** · [03 深度学习](03-deep-learning.md) · [04 大模型/Agent](04-llm-agent.md) · [书单](../resources/booklist.md) · [链接](../resources/links.md)
+**导航**：[00 总览](00-overview.md) · [01 软考期](01-soft-exam.md) · **02 传统机器学习** · [03 深度学习](03-deep-learning.md) · [04 大模型/Agent](04-llm-agent.md) · [书单](../reference/booklist.md) · [链接](../reference/links.md)
 
 ---
 

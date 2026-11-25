@@ -372,7 +372,7 @@
 > ⚠️ **红线**：CTF、靶场、SRC 挖洞请在授权范围内进行。**严禁**对未授权的真实系统扫描、渗透、测试。这是网安专业学生必须刻在脑子里的底线，详见 [第十三部分](#第十三部分--法律伦理与声明)。
 # 第五部分 · Python 底座：七个台阶
 
-> 完整版见 [resources/python-roadmap.md](resources/python-roadmap.md)。Python 是软考之外**三条线共同的底座**——AI 全靠它，CTF 脚本、取证分析、日志处理也都靠它。
+> 完整版见 [tools/python-roadmap.md](tools/python-roadmap.md)。Python 是软考之外**三条线共同的底座**——AI 全靠它，CTF 脚本、取证分析、日志处理也都靠它。
 
 ## 5.1 你在哪一格，目标在哪
 
@@ -486,7 +486,7 @@ if m:
 
 **自测**：能不看文档，写出正则从访问日志里提取 IP、时间、请求路径。
 
-> 看不懂 `for line in LOG_SAMPLE.strip().split("\n")` 这类语法？先花 3 天看 [SYNTAX-BOOTCAMP.md（3 天语法急救包）](SYNTAX-BOOTCAMP.md)——用"发牌/切香肠"的生活比喻讲懂读代码必备的 5 个零件。忘了某个语法怎么写？查 [SYNTAX-REFERENCE.md（语法库大全）](SYNTAX-REFERENCE.md)。
+> 看不懂 `for line in LOG_SAMPLE.strip().split("\n")` 这类语法？先花 3 天看 [SYNTAX-BOOTCAMP.md（3 天语法急救包）](guides/SYNTAX-BOOTCAMP.md)——用"发牌/切香肠"的生活比喻讲懂读代码必备的 5 个零件。忘了某个语法怎么写？查 [SYNTAX-REFERENCE.md（语法库大全）](guides/SYNTAX-REFERENCE.md)。
 
 ## 5.6 台阶 4：数据处理三件套
 
@@ -618,7 +618,7 @@ print("准确率:", accuracy_score(y_test, model.predict(X_test)))
 
 ### 深度学习基础
 
-- **框架**：PyTorch（你的 RTX 5060 有 8GB 显存，直接装 CUDA 版用 GPU 训练，比 CPU 快一个数量级，安装见 [硬件与本地环境](resources/hardware-setup.md)）
+- **框架**：PyTorch（你的 RTX 5060 有 8GB 显存，直接装 CUDA 版用 GPU 训练，比 CPU 快一个数量级，安装见 [硬件与本地环境](reference/hardware-setup.md)）
 - **课程**：李沐《动手学深度学习》（B站视频 + 配套电子书 d2l.ai）
 - **重点章节**：
   - 多层感知机（MLP）—— 基础
@@ -685,7 +685,7 @@ print("准确率:", accuracy_score(y_test, model.predict(X_test)))
 2. 不会就问本地模型——你有 Qwen3.5-9B，24 小时助教，问它不要钱。
 3. 卡住超过 15 分钟就求助，别死磕。
 
-> 前置：一看 `for line in ...split()` 就懵？先花 3 天看 [语法急救包](SYNTAX-BOOTCAMP.md)，再回来。
+> 前置：一看 `for line in ...split()` 就懵？先花 3 天看 [语法急救包](guides/SYNTAX-BOOTCAMP.md)，再回来。
 
 ## 7.2 14 天路线速览
 
@@ -844,13 +844,13 @@ sec-log-analyzer/
 
 | 文档 | 什么时候用 |
 |---|---|
-| [SYNTAX-BOOTCAMP.md](SYNTAX-BOOTCAMP.md) | 一看 for/split 就懵时，3 天讲懂 5 个读代码必备语法零件 |
-| [SYNTAX-REFERENCE.md](SYNTAX-REFERENCE.md) | 写代码卡住、某语法忘了怎么写，字典式随查随用 |
+| [SYNTAX-BOOTCAMP.md](guides/SYNTAX-BOOTCAMP.md) | 一看 for/split 就懵时，3 天讲懂 5 个读代码必备语法零件 |
+| [SYNTAX-REFERENCE.md](guides/SYNTAX-REFERENCE.md) | 写代码卡住、某语法忘了怎么写，字典式随查随用 |
 | [datasets/](datasets/README.md) | 250 份带攻击特征的练习日志，配实战计划练手 |
 | [checkin-log.md](checkin-log.md) | 每天学完追加一行，记录进度 |
 # 第九部分 · 硬件与本地大模型环境
 
-> 完整版见 [resources/hardware-setup.md](resources/hardware-setup.md)。
+> 完整版见 [reference/hardware-setup.md](reference/hardware-setup.md)。
 
 ## 9.1 你不需要为硬件焦虑
 
@@ -942,11 +942,11 @@ sec-log-analyzer/
 **一句话**：这台机器陪你走完从 Python 入门到大模型实验的全程都没问题。真正稀缺的是时间和动手——把机器用起来，比纠结配置重要一万倍。
 # 第十部分 · 书籍、课程与资源速查
 
-> 完整链接见 [resources/booklist.md](resources/booklist.md) 和 [resources/links.md](resources/links.md)。所有链接均联网核实过，个别以官网为准。
+> 完整链接见 [reference/booklist.md](reference/booklist.md) 和 [reference/links.md](reference/links.md)。所有链接均联网核实过，个别以官网为准。
 >
-> 🐙 **要管理自己的 GitHub 仓库 / 每天打卡 / 做项目版本管理？** 看 [resources/git-tutorial.md（Git 从入门到实战）](resources/git-tutorial.md)——从"三个区"心智模型到 clone/push/pull、分支、PyCharm 图形操作、报错急救、隐私红线，一份讲透。
+> 🐙 **要管理自己的 GitHub 仓库 / 每天打卡 / 做项目版本管理？** 看 [tools/git-tutorial.md（Git 从入门到实战）](tools/git-tutorial.md)——从"三个区"心智模型到 clone/push/pull、分支、PyCharm 图形操作、报错急救、隐私红线，一份讲透。
 >
-> 💻 **Windows 命令行不熟？** 看 [resources/cmd-powershell-tutorial.md（CMD 与 PowerShell 实战）](resources/cmd-powershell-tutorial.md)——CMD/PowerShell 区别、常用命令对照表、管道、环境变量、网安场景例子，玩靶场前先把命令行练顺手。
+> 💻 **Windows 命令行不熟？** 看 [tools/cmd-powershell-tutorial.md（CMD 与 PowerShell 实战）](tools/cmd-powershell-tutorial.md)——CMD/PowerShell 区别、常用命令对照表、管道、环境变量、网安场景例子，玩靶场前先把命令行练顺手。
 
 ## 10.1 书籍推荐（按阶段 × 优先级）
 
@@ -1027,7 +1027,7 @@ sec-log-analyzer/
 | TryHackMe | https://tryhackme.com | 游戏化入门，强烈推荐 |
 | Hack The Box | https://www.hackthebox.com | 进阶靶机 |
 | PortSwigger Web Security Academy | https://portswigger.net/web-security | Web 安全权威免费实验室 |
-| DVWA / Pikachu / Vulhub | 见 [链接速查表](resources/links.md#五网安ctf-平台与靶场用-ctf-驱动攻防) | 本地 / CVE 复现靶场 |
+| DVWA / Pikachu / Vulhub | 见 [链接速查表](reference/links.md#五网安ctf-平台与靶场用-ctf-驱动攻防) | 本地 / CVE 复现靶场 |
 
 ## 10.6 网安工具 / 取证工具
 
@@ -1070,7 +1070,7 @@ sec-log-analyzer/
 ## 11.2 语言与工具取舍
 
 - **语言**：大二专精 Python、保持 C++；Go / Rust 大三后按方向再学
-- **Python 怎么学**：见 [Python 学习路线](resources/python-roadmap.md)——三条线的共同底座，优先练熟
+- **Python 怎么学**：见 [Python 学习路线](tools/python-roadmap.md)——三条线的共同底座，优先练熟
 - **取证**：以火眼证据分析为主线，不盲目堆工具
 - **AI**：先传统机器学习，再深度学习，最后大模型 / Agent
 
@@ -1090,7 +1090,7 @@ for line in LOG_SAMPLE.strip().split("\n"):
 
 **通用口诀**：遇到看不懂的代码，先问 AI"用生活比喻解释这一行"，再让它"逐段拆解"，最后自己把它改写一遍。看不懂 → 问 → 改写，循环三次，没有看不懂的代码。
 
-> 语法急救见 [SYNTAX-BOOTCAMP.md](SYNTAX-BOOTCAMP.md)（3 天 5 个零件），速查见 [SYNTAX-REFERENCE.md](SYNTAX-REFERENCE.md)（字典式大全，含 C/C++/Rust/Go 对照）。
+> 语法急救见 [SYNTAX-BOOTCAMP.md](guides/SYNTAX-BOOTCAMP.md)（3 天 5 个零件），速查见 [SYNTAX-REFERENCE.md](guides/SYNTAX-REFERENCE.md)（字典式大全，含 C/C++/Rust/Go 对照）。
 
 ## 11.4 如何正确用 AI 辅助学习
 
@@ -1174,10 +1174,10 @@ AI 是这份路线里反复出现的关键词，但用错方式会让你"看起�
 保持手感即可，不用猛练。AI 里 C++ 用于模型部署/性能优化，网安里用于逆向/PWN——这些是大三的方向。现在别投入过多精力。
 
 **Q8：一看 `for line in ...split()` 这种语法就不懂，怎么办？**
-这是"读代码"的坎，不是"语法"的坎。花 3 天看 [语法急救包](SYNTAX-BOOTCAMP.md)，用"发牌/切香肠"的比喻讲懂 5 个必备零件。具体拆解法见 [11.3](#113-如何真正读懂一段代码)。
+这是"读代码"的坎，不是"语法"的坎。花 3 天看 [语法急救包](guides/SYNTAX-BOOTCAMP.md)，用"发牌/切香肠"的比喻讲懂 5 个必备零件。具体拆解法见 [11.3](#113-如何真正读懂一段代码)。
 
 **Q9：有 `Syntax` 大全之类的速查吗？**
-有。[SYNTAX-REFERENCE.md](SYNTAX-REFERENCE.md) 是字典式语法库大全：Python 全套语法 + 网安代码片段 + C/C++/Rust/Go 对照 + 报错速查，写代码卡住时按目录直接定位。
+有。[SYNTAX-REFERENCE.md](guides/SYNTAX-REFERENCE.md) 是字典式语法库大全：Python 全套语法 + 网安代码片段 + C/C++/Rust/Go 对照 + 报错速查，写代码卡住时按目录直接定位。
 
 ## AI 与 Agent
 
@@ -1213,7 +1213,7 @@ Agent 是你给它目标、它自己拆任务调工具多步执行完成的东�
 按阶段买：现在买《网络工程师教程》+《Python 编程：从入门到实践》；软考后买《机器学习实战》+《利用 Python 进行数据分析》；大二下买《动手学深度学习》+《白帽子讲 Web 安全》。一次只读一本。详见 [10.1](#101-书籍推荐按阶段--优先级)。
 
 **Q19：有没有可用的链接合集？**
-有。[resources/links.md](resources/links.md) 分类整理了软考、AI 课程、编码工具、数据集、CTF 平台、网安/取证工具、Agent 框架、社区资讯的全部直达链接，均已核实。
+有。[reference/links.md](reference/links.md) 分类整理了软考、AI 课程、编码工具、数据集、CTF 平台、网安/取证工具、Agent 框架、社区资讯的全部直达链接，均已核实。
 
 ## 学习与执行
 
@@ -1221,13 +1221,26 @@ Agent 是你给它目标、它自己拆任务调工具多步执行完成的东�
 这份 README 本身就是完整计划，配合 [14 天实战](START-HERE.md)（近期可执行）和 [学习路线](roadmap/00-overview.md)（长期规划）使用。别贪多，从"今天就能做的第一件事"开始。
 
 **Q21：前几天太简单了，我想要实战。**
-那就跳过语法入门，直接做 [14 天实战](START-HERE.md)——默认你会基础语法，每天一个真任务，不敲 `print` 玩语法。你反馈"这种语法不懂"时，用 [语法急救包](SYNTAX-BOOTCAMP.md) 3 天补上即可。
+那就跳过语法入门，直接做 [14 天实战](START-HERE.md)——默认你会基础语法，每天一个真任务，不敲 `print` 玩语法。你反馈"这种语法不懂"时，用 [语法急救包](guides/SYNTAX-BOOTCAMP.md) 3 天补上即可。
 
 **Q22：我可以每天在上面打卡吗？**
 可以。[checkin-log.md](checkin-log.md) 就是你的打卡地，每天追加一行，还有里程碑清单。让坚持看得见。
 
 **Q23：这个仓库怎么划分 / 目录结构是什么？**
-根目录下：`roadmap/` 是分阶段学习路线，`resources/` 是书籍/链接/Python 路线/硬件，`tutorial/` 是五套完整教程（分 `01-Python主线/`、`02-系统语言/`、`03-混合编程/`、`04-MySQL数据底座/`、`05-Linux系统底座/` 五个子目录，卷目录按数字编号排序），`datasets/` 是练习日志，`START-HERE.md` 是 14 天实战，`SYNTAX-BOOTCAMP.md` 和 `SYNTAX-REFERENCE.md` 是语法资料。本文开头的目录也可帮你导航。
+仓库按"用途"分成几个平级区，每个区都有自己的 README 导航：
+
+| 位置 | 装什么 | 什么时候进这个区 |
+|---|---|---|
+| `README.md`（本文件） | 总纲：13 部分完整指南 | 想知道全局 / 该学什么 / 怎么学时 |
+| `START-HERE.md` + `checkin-log.md` | 14 天实战 + 每日打卡 | 想动手做项目、记录进度时 |
+| [`guides/`](guides/README.md) | 语法急救包 + 语法库大全 | 一看代码就懵、查语法时 |
+| [`tools/`](tools/README.md) | Python 路线 + Git + CMD/PowerShell 手册 | 学某门语言 / 工具怎么用 |
+| [`reference/`](reference/README.md) | 书单 + 链接 + 硬件环境 | 查资料、找工具官网、配本地模型 |
+| [`roadmap/`](roadmap/README.md) | 软考 / ML / 深度学习 / Agent 分阶段路线 | 想知道"现在该学什么" |
+| [`tutorial/`](tutorial/索引.md) | 五套完整系统教程（Python / 系统语言 / 混合 / MySQL / Linux，卷按数字编号） | 想系统按章节深入某门技术 |
+| `datasets/` | 250 份带攻击特征的练习日志 | 做日志分析练习时 |
+
+本文开头的目录是总纲的导航；要进某个区，点上面表格里的 README 链接。
 
 **Q24：仓库里能出现我的学校/身份信息吗？**
 不能。这是公开仓库，涉及你个人隐私的敏感字样一律不要出现——当前仓库已清理干净。你在提问或提交时也注意别把敏感信息写进公开文件。
@@ -1339,7 +1352,7 @@ resp = requests.post(
 answer = resp.json()["choices"][0]["message"]["content"]
 ```
 
-> 更完整的语法与报错速查见 [SYNTAX-REFERENCE.md](SYNTAX-REFERENCE.md)。
+> 更完整的语法与报错速查见 [SYNTAX-REFERENCE.md](guides/SYNTAX-REFERENCE.md)。
 # 第十三部分 · 法律伦理与声明
 
 ## 13.1 法律与伦理底线
@@ -1372,6 +1385,7 @@ answer = resp.json()["choices"][0]["message"]["content"]
 
 | 我想…… | 去看 |
 |---|---|
+| 按分区浏览整个仓库 | [guides/](guides/README.md) · [tools/](tools/README.md) · [reference/](reference/README.md) · [roadmap/](roadmap/README.md) · [tutorial/](tutorial/索引.md) |
 | 知道整体该按什么顺序推进 | [00 总览](roadmap/00-overview.md) |
 | 准备软考 | [01 软考期](roadmap/01-soft-exam.md) |
 | 入门机器学习 | [02 传统 ML](roadmap/02-ml-basics.md) |
@@ -1379,13 +1393,13 @@ answer = resp.json()["choices"][0]["message"]["content"]
 | 学大模型 / Agent | [04 大模型/Agent](roadmap/04-llm-agent.md) |
 | 快速做出第一个作品 | [START-HERE.md](START-HERE.md) |
 | 系统学（五套教程：Python/系统语言/混合/MySQL/Linux） | [tutorial/索引.md](tutorial/索引.md) |
-| 补语法急救 | [SYNTAX-BOOTCAMP.md](SYNTAX-BOOTCAMP.md) |
-| 查语法速查 | [SYNTAX-REFERENCE.md](SYNTAX-REFERENCE.md) |
+| 补语法急救 | [SYNTAX-BOOTCAMP.md](guides/SYNTAX-BOOTCAMP.md) |
+| 查语法速查 | [SYNTAX-REFERENCE.md](guides/SYNTAX-REFERENCE.md) |
 | 练日志分析 | [datasets/](datasets/README.md) |
-| 查书单 / 链接 | [resources/](resources/links.md) |
-| 配置硬件 / 本地模型 | [hardware-setup.md](resources/hardware-setup.md) |
-| 学 Git / 管理 GitHub 仓库 | [git-tutorial.md](resources/git-tutorial.md) |
-| 学 CMD / PowerShell 命令行 | [cmd-powershell-tutorial.md](resources/cmd-powershell-tutorial.md) |
+| 查书单 / 链接 | [reference/](reference/links.md) |
+| 配置硬件 / 本地模型 | [hardware-setup.md](reference/hardware-setup.md) |
+| 学 Git / 管理 GitHub 仓库 | [git-tutorial.md](tools/git-tutorial.md) |
+| 学 CMD / PowerShell 命令行 | [cmd-powershell-tutorial.md](tools/cmd-powershell-tutorial.md) |
 | 每天打卡 | [checkin-log.md](checkin-log.md) |
 
 ---

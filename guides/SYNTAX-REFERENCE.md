@@ -4,7 +4,7 @@
 > 写代码卡住了、看到某段语法不懂了，按目录找到那个点，看一句话解释 + 一个能跑的最小例子，照着改就行。
 > 覆盖 **Python 全套常用语法**（主线）+ **C/C++/Rust/Go 语法对照** + **常见报错速查**。
 
-**导航**：[README](README.md) · [3 天语法急救包](SYNTAX-BOOTCAMP.md)（完全零基础先看这个）· [Python 主教程](tutorial/README.md) · [每日打卡](checkin-log.md)
+**导航**：[README](../README.md) · [3 天语法急救包](SYNTAX-BOOTCAMP.md)（完全零基础先看这个）· [Python 主教程](../tutorial/README.md) · [每日打卡](../checkin-log.md)
 
 ---
 
@@ -443,13 +443,13 @@ def ask(q):
 # print(ask("用一句话解释 SQL 注入"))
 ```
 
-> 更多实战代码见 [14 天实战计划](START-HERE.md) 和 [练习数据集](datasets/README.md)。
+> 更多实战代码见 [14 天实战计划](../START-HERE.md) 和 [练习数据集](../datasets/README.md)。
 
 ---
 
 # 第二部分 · 多语言语法对照（C/C++ · Rust · Go）
 
-> 这是进阶内容，配合 [系统语言教程](tutorial/02-系统语言/README.md) 查。**大二阶段以 Python 为主，这部分扫一眼即可，别现在就埋头学。**
+> 这是进阶内容，配合 [系统语言教程](../tutorial/02-系统语言/README.md) 查。**大二阶段以 Python 为主，这部分扫一眼即可，别现在就埋头学。**
 
 ## 一句话定位
 
@@ -538,9 +538,9 @@ go func() {
 
 配合：
 - 完全零基础 → [3 天语法急救包](SYNTAX-BOOTCAMP.md)
-- 系统学习 → [Python 主教程](tutorial/README.md)
-- 动手实战 → [14 天实战计划](START-HERE.md)
-- 练手素材 → [250 份日志数据集](datasets/README.md)
+- 系统学习 → [Python 主教程](../tutorial/README.md)
+- 动手实战 → [14 天实战计划](../START-HERE.md)
+- 练手素材 → [250 份日志数据集](../datasets/README.md)
 
 ---
 

@@ -3,7 +3,7 @@
 > 这是一份写给"只会点点点、没系统用过 Git"的人的中文教程。不讲玄学，从"为什么要用 Git"讲起，到能独立管理自己的 GitHub 仓库、每天打卡、做项目版本管理。
 > 你不需要背命令——**理解模型 + 常用命令查表**就够了。
 
-**导航**：[仓库 README](../README.md) · [14 天实战](../START-HERE.md) · [每日打卡](../checkin-log.md) · [Python 路线](python-roadmap.md) · [硬件环境](hardware-setup.md)
+**导航**：[仓库 README](../README.md) · [14 天实战](../START-HERE.md) · [每日打卡](../checkin-log.md) · [Python 路线](python-roadmap.md) · [硬件环境](../reference/hardware-setup.md)
 
 ---
 

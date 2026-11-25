@@ -2,7 +2,7 @@
 
 > 前面走通了再进这一阶段。Agent 对你有双重身份：现在当工具用，大三以后当发展方向。
 
-**导航**：[00 总览](00-overview.md) · [01 软考期](01-soft-exam.md) · [02 传统机器学习](02-ml-basics.md) · [03 深度学习](03-deep-learning.md) · **04 大模型/Agent** · [书单](../resources/booklist.md) · [链接](../resources/links.md)
+**导航**：[00 总览](00-overview.md) · [01 软考期](01-soft-exam.md) · [02 传统机器学习](02-ml-basics.md) · [03 深度学习](03-deep-learning.md) · **04 大模型/Agent** · [书单](../reference/booklist.md) · [链接](../reference/links.md)
 
 ---
 
@@ -15,7 +15,7 @@
   - 用大模型辅助**钓鱼文本识别**、**告警降噪**
   - 了解 RAG（检索增强生成）：把安全知识库接进大模型
 
-> 你的 RTX 5060（8GB）可以用 Ollama / LM Studio 本地跑 7B 量化模型做这些实验，方法见[硬件与本地环境](../resources/hardware-setup.md#四本地跑大模型学有余力再玩)。
+> 你的 RTX 5060（8GB）可以用 Ollama / LM Studio 本地跑 7B 量化模型做这些实验，方法见[硬件与本地环境](../reference/hardware-setup.md#四本地跑大模型学有余力再玩)。
 
 ---
 

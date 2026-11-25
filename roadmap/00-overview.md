@@ -4,7 +4,7 @@
 
 > 这是整条路线的"地图"。先看完这篇建立全局观，再按顺序读各阶段详情。
 
-**导航**：[00 总览](00-overview.md) · [01 软考期](01-soft-exam.md) · [02 传统机器学习](02-ml-basics.md) · [03 深度学习](03-deep-learning.md) · [04 大模型/Agent](04-llm-agent.md) · [书单](../resources/booklist.md) · [链接](../resources/links.md) · [打卡](../checkin-log.md)
+**导航**：[00 总览](00-overview.md) · [01 软考期](01-soft-exam.md) · [02 传统机器学习](02-ml-basics.md) · [03 深度学习](03-deep-learning.md) · [04 大模型/Agent](04-llm-agent.md) · [书单](../reference/booklist.md) · [链接](../reference/links.md) · [打卡](../checkin-log.md)
 
 ---
 
@@ -82,7 +82,7 @@
 - **Go（大三后按需）**：网安里用于写高并发扫描器、代理、云安全工具（如 fscan 等）；AI 领域用得少。做安全开发/护网时再学
 - **Rust（更靠后，按需）**：内存安全 + 高性能，用于底层工具、恶意代码分析、重构安全组件；学习曲线陡，大三下以后有兴趣再碰
 - **原则**：现在只专精 Python + 保持 C++。语言是工具，先把一条线走通再扩展，不要为了学语言而学语言
-- **怎么学 Python**：见 [Python 学习路线](../resources/python-roadmap.md)——从会语法到能写网安/AI 脚本的七个台阶
+- **怎么学 Python**：见 [Python 学习路线](../tools/python-roadmap.md)——从会语法到能写网安/AI 脚本的七个台阶
 
 ---
 
