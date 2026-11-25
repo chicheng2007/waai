@@ -41,6 +41,7 @@
 - [04 · 大模型 / Agent](roadmap/04-llm-agent.md) —— Transformer + Agent 双重身份 + 学习路径
 
 **📚 资源库（按需查）**
+- 🗂️ **[练习用日志数据集（250 份）](datasets/README.md)** —— 带攻击特征的模拟日志 + 生成脚本，专配急救包和实战计划练手
 - 🚑 **[3 天语法急救包](SYNTAX-BOOTCAMP.md)** —— 只会基础语法？用生活比喻讲懂 5 个读代码必备零件（放在开头，优先看）
 - 🐍 **[Python 学习路线](resources/python-roadmap.md)** —— 从会语法到能写网安/AI 脚本，七个台阶 + 每日安排
 - 💻 **[硬件与本地环境](resources/hardware-setup.md)** —— R9000P 5060 能跑什么、GPU 版 PyTorch 安装、**已实战 LM Studio + Qwen3.5-9B**
