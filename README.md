@@ -1,6 +1,8 @@
 # 网安专业 · AI 学习路线
 
-> 🚨 **不知道从哪开始、觉得自己什么都不会？直接看 [START-HERE.md（手把手超级详细计划）](START-HERE.md)** —— 逐日、逐代码，照着做就行。
+> 🚨 **只会 print、一看 for/split 就懵？先看 [SYNTAX-BOOTCAMP.md（3 天语法急救包）](SYNTAX-BOOTCAMP.md)** —— 用"发牌/切香肠"讲懂读代码必备的 5 个零件，3 天后能读懂实战代码。
+>
+> 🚨 **语法没问题、想直接上实战？看 [START-HERE.md（14 天实战计划）](START-HERE.md)** —— 每天一个真任务，最后交付一个 AI 日志研判工具到 GitHub。
 
 > 从零基础到「网安 + AI」复合人才的学习路线与资源清单。
 > 起点：大二 · Python/C++ 基础语法 · 软考备考中 · AI / 攻防 / 取证均零基础。
@@ -39,6 +41,7 @@
 - [04 · 大模型 / Agent](roadmap/04-llm-agent.md) —— Transformer + Agent 双重身份 + 学习路径
 
 **📚 资源库（按需查）**
+- 🚑 **[3 天语法急救包](SYNTAX-BOOTCAMP.md)** —— 只会基础语法？用生活比喻讲懂 5 个读代码必备零件（放在开头，优先看）
 - 🐍 **[Python 学习路线](resources/python-roadmap.md)** —— 从会语法到能写网安/AI 脚本，七个台阶 + 每日安排
 - 💻 **[硬件与本地环境](resources/hardware-setup.md)** —— R9000P 5060 能跑什么、GPU 版 PyTorch 安装、**已实战 LM Studio + Qwen3.5-9B**
 - [书籍推荐](resources/booklist.md) —— 按阶段 × 优先级，标注必读 / 选读
