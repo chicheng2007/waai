@@ -4,6 +4,8 @@
 >
 > 🚨 **只会 print、一看 for/split 就懵？先看 [SYNTAX-BOOTCAMP.md（3 天语法急救包）](SYNTAX-BOOTCAMP.md)** —— 用"发牌/切香肠"讲懂读代码必备的 5 个零件，3 天后能读懂实战代码。
 >
+> 📚 **写代码卡住、某个语法忘了怎么写？查 [SYNTAX-REFERENCE.md（语法库大全）](SYNTAX-REFERENCE.md)** —— 字典式速查，Python 全套语法 + 多语言对照 + 常见报错，按目录直接定位。
+>
 > 🚨 **语法没问题、想直接上实战？看 [START-HERE.md（14 天实战计划）](START-HERE.md)** —— 每天一个真任务，最后交付一个 AI 日志研判工具到 GitHub。
 
 > 从零基础到「网安 + AI」复合人才的学习路线与资源清单。
@@ -48,6 +50,7 @@
 - [04 · 大模型 / Agent](roadmap/04-llm-agent.md) —— Transformer + Agent 双重身份 + 学习路径
 
 **📚 资源库（按需查）**
+- 📖 **[语法库大全](SYNTAX-REFERENCE.md)** —— 字典式语法速查：Python 全套 + 多语言对照 + 报错速查，随查随用
 - 🗂️ **[练习用日志数据集（250 份）](datasets/README.md)** —— 带攻击特征的模拟日志 + 生成脚本，专配急救包和实战计划练手
 - 🚑 **[3 天语法急救包](SYNTAX-BOOTCAMP.md)** —— 只会基础语法？用生活比喻讲懂 5 个读代码必备零件（放在开头，优先看）
 - 🐍 **[Python 学习路线](resources/python-roadmap.md)** —— 从会语法到能写网安/AI 脚本，七个台阶 + 每日安排
