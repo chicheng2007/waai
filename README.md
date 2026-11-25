@@ -909,6 +909,8 @@ sec-log-analyzer/
 # 第十部分 · 书籍、课程与资源速查
 
 > 完整链接见 [resources/booklist.md](resources/booklist.md) 和 [resources/links.md](resources/links.md)。所有链接均联网核实过，个别以官网为准。
+>
+> 🐙 **要管理自己的 GitHub 仓库 / 每天打卡 / 做项目版本管理？** 看 [resources/git-tutorial.md（Git 从入门到实战）](resources/git-tutorial.md)——从"三个区"心智模型到 clone/push/pull、分支、PyCharm 图形操作、报错急救、隐私红线，一份讲透。
 
 ## 10.1 书籍推荐（按阶段 × 优先级）
 
@@ -1346,6 +1348,7 @@ answer = resp.json()["choices"][0]["message"]["content"]
 | 练日志分析 | [datasets/](datasets/README.md) |
 | 查书单 / 链接 | [resources/](resources/links.md) |
 | 配置硬件 / 本地模型 | [hardware-setup.md](resources/hardware-setup.md) |
+| 学 Git / 管理 GitHub 仓库 | [git-tutorial.md](resources/git-tutorial.md) |
 | 每天打卡 | [checkin-log.md](checkin-log.md) |
 
 ---
