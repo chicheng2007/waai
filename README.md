@@ -864,6 +864,9 @@ sec-log-analyzer/
 | [SYNTAX-REFERENCE.md](guides/SYNTAX-REFERENCE.md) | 写代码卡住、某语法忘了怎么写，字典式随查随用 |
 | [datasets/](datasets/README.md) | 250 份带攻击特征的练习日志，配实战计划练手 |
 | [checkin-log.md](checkin-log.md) | 每天学完追加一行，记录进度 |
+
+> 🎮 **独立专区 · PWN Academy《从零开始的 Pwner 生活》**：仓库还单独收录了一套 PWN / 二进制漏洞利用专题（[进入专区](pwn-academy/README.md)），内分四套——硬核基础 35 章 + 游戏基础 29 关 + 硬核进阶 20 章 + 游戏进阶 19 关。它**独立于上面六套体系、不计入章节编号**，想专攻 PWN 方向时按专区自己的路线学（零基础建议从游戏版 `03-core-game` 第 1 关入手）。
+
 # 第九部分 · 硬件与本地大模型环境
 
 > 完整版见 [reference/hardware-setup.md](reference/hardware-setup.md)。
@@ -1254,6 +1257,7 @@ Agent 是你给它目标、它自己拆任务调工具多步执行完成的东�
 | [`reference/`](reference/README.md) | 书单 + 链接 + 硬件环境 | 查资料、找工具官网、配本地模型 |
 | [`roadmap/`](roadmap/README.md) | 软考 / ML / 深度学习 / Agent 分阶段路线 | 想知道"现在该学什么" |
 | [`tutorial/`](tutorial/索引.md) | 六套完整系统教程（Python / 系统语言 / 混合 / MySQL / Linux / CTF，卷按数字编号） | 想系统按章节深入某门技术 |
+| [`pwn-academy/`](pwn-academy/README.md) | **独立专区**：PWN Academy《从零开始的 Pwner 生活》，四套教程（硬核/游戏 × 基础/进阶），不计入六套体系 | 想专门攻 PWN / 二进制漏洞利用方向时 |
 | `datasets/` | 250 份带攻击特征的练习日志 | 做日志分析练习时 |
 
 本文开头的目录是总纲的导航；要进某个区，点上面表格里的 README 链接。
@@ -1401,7 +1405,7 @@ answer = resp.json()["choices"][0]["message"]["content"]
 
 | 我想…… | 去看 |
 |---|---|
-| 按分区浏览整个仓库 | [guides/](guides/README.md) · [tools/](tools/README.md) · [reference/](reference/README.md) · [roadmap/](roadmap/README.md) · [tutorial/](tutorial/索引.md) |
+| 按分区浏览整个仓库 | [guides/](guides/README.md) · [tools/](tools/README.md) · [reference/](reference/README.md) · [roadmap/](roadmap/README.md) · [tutorial/](tutorial/索引.md) · [pwn-academy/](pwn-academy/README.md)（独立专区） |
 | 知道整体该按什么顺序推进 | [00 总览](roadmap/00-overview.md) |
 | 准备软考 | [01 软考期](roadmap/01-soft-exam.md) |
 | 入门机器学习 | [02 传统 ML](roadmap/02-ml-basics.md) |
@@ -1409,6 +1413,7 @@ answer = resp.json()["choices"][0]["message"]["content"]
 | 学大模型 / Agent | [04 大模型/Agent](roadmap/04-llm-agent.md) |
 | 快速做出第一个作品 | [START-HERE.md](START-HERE.md) |
 | 系统学（六套教程：Python/系统语言/混合/MySQL/Linux/CTF） | [tutorial/索引.md](tutorial/索引.md) |
+| 专攻 PWN / 二进制漏洞（独立专区） | [pwn-academy/README.md](pwn-academy/README.md) |
 | 补语法急救 | [SYNTAX-BOOTCAMP.md](guides/SYNTAX-BOOTCAMP.md) |
 | 查语法速查 | [SYNTAX-REFERENCE.md](guides/SYNTAX-REFERENCE.md) |
 | 练日志分析 | [datasets/](datasets/README.md) |

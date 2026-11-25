@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#121a2e"/><stop offset="1" stop-color="#0a0e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="430" rx="14" fill="url(#bg)" stroke="#2a3a5e"/>
+  <text x="450" y="40" text-anchor="middle" fill="#00e5ff" font-size="24" font-weight="bold" font-family="sans-serif">UAF：退租储物柜后，偷偷留了一把钥匙</text>
+
+  <!-- 时间线三步 -->
+  <!-- 步骤1 -->
+  <rect x="40" y="80" width="250" height="290" rx="10" fill="#0d1424" stroke="#2a3a5e"/>
+  <text x="165" y="112" text-anchor="middle" fill="#ffc312" font-size="16" font-weight="bold" font-family="sans-serif">① 租柜子</text>
+  <rect x="75" y="135" width="180" height="90" rx="8" fill="#1e3a5f" stroke="#4a7ab5"/>
+  <text x="165" y="172" text-anchor="middle" fill="#e8eef7" font-size="14" font-family="monospace">malloc(32)</text>
+  <text x="165" y="200" text-anchor="middle" fill="#2ed573" font-size="13" font-family="sans-serif">拿到钥匙 p</text>
+  <text x="165" y="255" text-anchor="middle" fill="#8fa3c8" font-size="13" font-family="sans-serif">柜子里放着</text>
+  <text x="165" y="280" text-anchor="middle" fill="#e8eef7" font-size="13" font-family="monospace">"正常数据"</text>
+
+  <!-- 步骤2 -->
+  <rect x="325" y="80" width="250" height="290" rx="10" fill="#0d1424" stroke="#ff4757"/>
+  <text x="450" y="112" text-anchor="middle" fill="#ff4757" font-size="16" font-weight="bold" font-family="sans-serif">② 退租（free）</text>
+  <rect x="360" y="135" width="180" height="90" rx="8" fill="#3a1a2a" stroke="#ff4757" stroke-dasharray="5,3"/>
+  <text x="450" y="172" text-anchor="middle" fill="#ff6b81" font-size="14" font-family="monospace">free(p)</text>
+  <text x="450" y="200" text-anchor="middle" fill="#ff6b81" font-size="13" font-family="sans-serif">柜子空闲了</text>
+  <text x="450" y="255" text-anchor="middle" fill="#ffc312" font-size="13" font-family="sans-serif">但钥匙 p 没还！</text>
+  <text x="450" y="280" text-anchor="middle" fill="#ffc312" font-size="13" font-family="monospace">p 仍指向旧柜子</text>
+
+  <!-- 步骤3 -->
+  <rect x="610" y="80" width="250" height="290" rx="10" fill="#0d1424" stroke="#a55eea"/>
+  <text x="735" y="112" text-anchor="middle" fill="#a55eea" font-size="16" font-weight="bold" font-family="sans-serif">③ 偷偷用旧钥匙</text>
+  <rect x="645" y="135" width="180" height="90" rx="8" fill="#2a1a3a" stroke="#a55eea"/>
+  <text x="735" y="172" text-anchor="middle" fill="#e8eef7" font-size="14" font-family="monospace">*p = 篡改</text>
+  <text x="735" y="200" text-anchor="middle" fill="#ff6b81" font-size="13" font-family="sans-serif">往里塞恶意数据</text>
+  <text x="735" y="255" text-anchor="middle" fill="#8fa3c8" font-size="13" font-family="sans-serif">若柜子已租给别人</text>
+  <text x="735" y="280" text-anchor="middle" fill="#a55eea" font-size="13" font-family="sans-serif">就改了别人的东西!</text>
+
+  <!-- 箭头 -->
+  <path d="M 290 225 L 320 225" stroke="#8fa3c8" stroke-width="2" marker-end="url(#a3)"/>
+  <path d="M 575 225 L 605 225" stroke="#8fa3c8" stroke-width="2" marker-end="url(#a3)"/>
+  <defs><marker id="a3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#8fa3c8"/></marker></defs>
+
+  <text x="450" y="400" text-anchor="middle" fill="#2ed573" font-size="14" font-family="sans-serif">经典利用：UAF 改写函数指针为 system → 程序调用它时执行 system("/bin/sh")</text>
+</svg>

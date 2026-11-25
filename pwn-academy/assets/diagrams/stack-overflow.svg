@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#121a2e"/><stop offset="1" stop-color="#0a0e1a"/>
+    </linearGradient>
+    <linearGradient id="plate" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1e3a5f"/><stop offset="1" stop-color="#2a4a7a"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="460" rx="14" fill="url(#bg)" stroke="#2a3a5e"/>
+  <text x="450" y="42" text-anchor="middle" fill="#00e5ff" font-size="24" font-weight="bold" font-family="sans-serif">栈溢出：往盘子里堆太多菜，涂改了「回城卷轴」</text>
+
+  <!-- 栈柱 -->
+  <rect x="70" y="90" width="360" height="300" rx="8" fill="#0d1424" stroke="#2a3a5e"/>
+  <text x="250" y="118" text-anchor="middle" fill="#8fa3c8" font-size="14" font-family="sans-serif">栈（盘子柱）· 往低地址长 ↓</text>
+
+  <!-- buf 盘子 -->
+  <rect x="100" y="150" width="300" height="60" rx="6" fill="url(#plate)" stroke="#4a7ab5"/>
+  <text x="250" y="178" text-anchor="middle" fill="#e8eef7" font-size="15" font-family="sans-serif">buf[16] 你的输入</text>
+  <text x="250" y="198" text-anchor="middle" fill="#ffc312" font-size="13" font-family="monospace">A A A A A A A A A A A A A A A A</text>
+
+  <!-- 溢出的菜 -->
+  <rect x="100" y="218" width="300" height="42" rx="6" fill="#3a1a2a" stroke="#ff4757" stroke-dasharray="5,3"/>
+  <text x="250" y="245" text-anchor="middle" fill="#ff6b81" font-size="14" font-family="sans-serif">↑ 输入超长，菜堆出了盘子边缘…</text>
+
+  <!-- rbp -->
+  <rect x="100" y="268" width="300" height="40" rx="6" fill="#2a2a1a" stroke="#8a7a3a"/>
+  <text x="250" y="294" text-anchor="middle" fill="#ffc312" font-size="14" font-family="sans-serif">旧 rbp（被冲垮）</text>
+
+  <!-- 返回地址 -->
+  <rect x="100" y="316" width="300" height="52" rx="6" fill="#1a3a2a" stroke="#2ed573" stroke-width="2"/>
+  <text x="250" y="338" text-anchor="middle" fill="#2ed573" font-size="14" font-family="sans-serif">返回地址 = 回城卷轴</text>
+  <text x="250" y="358" text-anchor="middle" fill="#ff4757" font-size="13" font-family="monospace">被涂改成 → 后门函数地址!</text>
+
+  <!-- 箭头 -->
+  <path d="M 440 340 L 520 340" stroke="#ff4757" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#ff4757"/></marker></defs>
+
+  <!-- 结果 -->
+  <rect x="535" y="120" width="320" height="250" rx="10" fill="#0d1424" stroke="#2ed573"/>
+  <text x="695" y="155" text-anchor="middle" fill="#2ed573" font-size="17" font-weight="bold" font-family="sans-serif">函数执行 ret 时…</text>
+  <text x="695" y="195" text-anchor="middle" fill="#e8eef7" font-size="14" font-family="sans-serif">从栈上弹出「回城卷轴」</text>
+  <text x="695" y="225" text-anchor="middle" fill="#e8eef7" font-size="14" font-family="sans-serif">按上面的地址传送</text>
+  <text x="695" y="265" text-anchor="middle" fill="#ffc312" font-size="15" font-family="sans-serif">→ 跳到后门函数</text>
+  <rect x="600" y="295" width="190" height="44" rx="8" fill="#1a3a2a" stroke="#2ed573"/>
+  <text x="695" y="323" text-anchor="middle" fill="#2ed573" font-size="18" font-weight="bold" font-family="monospace">shell !</text>
+
+  <text x="450" y="425" text-anchor="middle" fill="#8fa3c8" font-size="13" font-family="sans-serif">payload = b"A" × 偏移 + p64(目标地址)　—　偏移 = 填满 buf + 覆盖 rbp 的字节数</text>
+</svg>

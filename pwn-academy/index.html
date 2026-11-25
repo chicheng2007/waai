@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PWN Academy · 内存城闯关中心</title>
+<style>
+  :root{
+    --bg:#0a0e1a; --panel:#121a2e; --panel2:#1a2542; --line:#2a3a5e;
+    --cyan:#00e5ff; --gold:#ffc312; --red:#ff4757; --green:#2ed573;
+    --purple:#a55eea; --txt:#e8eef7; --dim:#8fa3c8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:radial-gradient(ellipse at 20% 0%,#16213e 0%,var(--bg) 55%);
+    color:var(--txt);font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;
+    min-height:100vh;padding:40px 20px;line-height:1.6;
+  }
+  .wrap{max-width:1180px;margin:0 auto}
+  header{text-align:center;margin-bottom:44px;position:relative}
+  .badge{display:inline-block;border:1px solid var(--cyan);color:var(--cyan);
+    padding:4px 14px;border-radius:20px;font-size:13px;letter-spacing:2px;margin-bottom:16px}
+  h1{font-size:clamp(30px,6vw,58px);font-weight:800;letter-spacing:2px;
+    background:linear-gradient(90deg,var(--cyan),var(--purple),var(--gold));
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+    text-shadow:0 0 40px rgba(0,229,255,.15)}
+  .sub{color:var(--dim);margin-top:12px;font-size:16px}
+  .stats{display:flex;gap:24px;justify-content:center;flex-wrap:wrap;margin-top:22px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:12px 22px;min-width:120px}
+  .stat b{display:block;font-size:26px;color:var(--gold)}
+  .stat span{font-size:12px;color:var(--dim)}
+  .section-title{font-size:22px;margin:38px 0 18px;padding-left:14px;
+    border-left:4px solid var(--cyan);display:flex;align-items:center;gap:10px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+  .card{background:linear-gradient(160deg,var(--panel2),var(--panel));
+    border:1px solid var(--line);border-radius:16px;padding:24px;
+    text-decoration:none;color:var(--txt);transition:.25s;position:relative;overflow:hidden}
+  .card:hover{transform:translateY(-6px);border-color:var(--cyan);
+    box-shadow:0 12px 40px rgba(0,229,255,.15)}
+  .card::after{content:"";position:absolute;right:-30px;top:-30px;width:100px;height:100px;
+    background:radial-gradient(circle,var(--glow,rgba(0,229,255,.12)),transparent 70%)}
+  .card .ico{font-size:34px;margin-bottom:10px}
+  .card h3{font-size:19px;margin-bottom:6px}
+  .card .tag{display:inline-block;font-size:11px;padding:2px 9px;border-radius:6px;
+    background:rgba(0,229,255,.12);color:var(--cyan);margin-bottom:12px}
+  .card.game .tag{background:rgba(255,193,18,.12);color:var(--gold)}
+  .card p{font-size:13.5px;color:var(--dim)}
+  .card .meta{margin-top:14px;font-size:12px;color:var(--green);
+    border-top:1px dashed var(--line);padding-top:10px}
+  .flow{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:26px;margin-top:16px}
+  .flow pre{white-space:pre-wrap;font-family:inherit;font-size:14px;color:var(--dim);line-height:2}
+  .flow b{color:var(--cyan)}
+  .diagram{background:var(--panel);border:1px solid var(--line);border-radius:16px;
+    padding:20px;margin-top:16px;text-align:center}
+  .diagram img{max-width:100%;height:auto;border-radius:8px}
+  footer{text-align:center;color:var(--dim);font-size:13px;margin-top:50px;
+    padding-top:20px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="badge">🎮 CTF · PWN · TUTORIAL SERIES</div>
+    <h1>PWN ACADEMY</h1>
+    <div class="sub">从零开始的 Pwner 生活 · 内存城闯关中心</div>
+    <div class="stats">
+      <div class="stat"><b>4</b><span>套教程</span></div>
+      <div class="stat"><b>103</b><span>关卡/章节</span></div>
+      <div class="stat"><b>43万+</b><span>字符</span></div>
+      <div class="stat"><b>151</b><span>文档</span></div>
+    </div>
+  </header>
+
+  <div class="section-title">🗺️ 选择你的冒险路线</div>
+  <div class="grid">
+    <a class="card game" href="03-core-game/README.md" style="--glow:rgba(255,193,18,.14)">
+      <div class="ico">🎮</div>
+      <span class="tag">游戏版 · 零基础首选</span>
+      <h3>基础篇 · 内存城</h3>
+      <p>用游戏比喻讲透 PWN 基础：栈是叠盘子，ROP 是拼乐高，UAF 是退租偷留的钥匙。29 关闯关式教学。</p>
+      <div class="meta">29 关 + 3 附录 →</div>
+    </a>
+    <a class="card" href="01-core/README.md">
+      <div class="ico">📖</div>
+      <span class="tag">硬核版 · 案头参考</span>
+      <h3>基础篇 · 系统教程</h3>
+      <p>35 章完整体系，从 C 语言内存模型到堆利用、IO_FILE、内核 PWN，逐字节推导，适合深入查阅。</p>
+      <div class="meta">35 章 + 4 附录 →</div>
+    </a>
+    <a class="card game" href="04-deep-game/README.md" style="--glow:rgba(162,94,234,.14)">
+      <div class="ico">🕹️</div>
+      <span class="tag">游戏版 · 隐藏地图</span>
+      <h3>进阶篇 · 后台世界</h3>
+      <p>切到游戏后台视角：看懂 glibc 源码，玩转 House of Apple，请 angr/AFL 当你的 AI 代打。</p>
+      <div class="meta">19 关 + 2 附录 →</div>
+    </a>
+    <a class="card" href="02-deep/README.md">
+      <div class="ico">🔬</div>
+      <span class="tag">硬核版 · 源码深挖</span>
+      <h3>进阶篇 · 原理剖析</h3>
+      <p>malloc/free 源码级剖析、现代堆攻防演化史、FSOP、vtable 检查史、跨平台 PWN。</p>
+      <div class="meta">20 章 + 4 附录 →</div>
+    </a>
+  </div>
+
+  <div class="section-title">🧭 新手引导：我该从哪开始？</div>
+  <div class="flow">
+<pre>
+<b>完全零基础?</b>
+  ├─ 是 → 先玩 <b>🎮 基础篇·游戏版</b> 第 1 关（不懂就翻硬核版对应章节）
+  └─ 否 → 能独立做中低难度栈题吗?
+       ├─ 否 → 看 <b>📖 基础篇·硬核版</b> 系统学
+       └─ 是 → 玩 <b>🕹️ 进阶篇·游戏版</b> 看现代招式
+                 想深挖 → <b>🔬 进阶篇·硬核版</b>
+
+<b>核心心法（所有关卡通用）：</b> 找内存破坏漏洞 → 控制程序计数器(rip/PC) → 执行目标逻辑
+</pre>
+  </div>
+
+  <div class="section-title">🖼️ 核心比喻可视化</div>
+  <div class="diagram">
+    <img src="assets/diagrams/stack-overflow.svg" alt="栈溢出：往盘子堆太多菜，涂改回城卷轴">
+  </div>
+
+  <footer>
+    ⚠️ 所有技术仅用于 CTF 与授权实验环境 · CC BY-NC-SA 4.0<br>
+    Built for PWN learners · 祝早日拿到你的 shell 🏆
+  </footer>
+</div>
+</body>
+</html>

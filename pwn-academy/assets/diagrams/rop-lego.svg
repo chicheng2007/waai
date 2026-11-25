@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400" width="900" height="400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#121a2e"/><stop offset="1" stop-color="#0a0e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="400" rx="14" fill="url(#bg)" stroke="#2a3a5e"/>
+  <text x="450" y="40" text-anchor="middle" fill="#00e5ff" font-size="24" font-weight="bold" font-family="sans-serif">ROP：把以 ret 结尾的小积木，拼成一条指令链</text>
+
+  <!-- 栈上的链 -->
+  <text x="60" y="85" fill="#8fa3c8" font-size="14" font-family="sans-serif">栈上连续的 8 字节（多米诺骨牌）:</text>
+  <g font-family="monospace" text-anchor="middle">
+    <g transform="translate(60,105)">
+      <rect width="160" height="70" rx="8" fill="#1e3a5f" stroke="#4a7ab5"/>
+      <text x="80" y="30" fill="#e8eef7" font-size="13">pop rdi; ret</text>
+      <text x="80" y="52" fill="#8fa3c8" font-size="11">积木①:设置参数</text>
+    </g>
+    <g transform="translate(240,105)">
+      <rect width="160" height="70" rx="8" fill="#3a2a1a" stroke="#ffc312"/>
+      <text x="80" y="30" fill="#ffc312" font-size="13">"/bin/sh" 地址</text>
+      <text x="80" y="52" fill="#8fa3c8" font-size="11">被 pop 进 rdi</text>
+    </g>
+    <g transform="translate(420,105)">
+      <rect width="160" height="70" rx="8" fill="#1e3a5f" stroke="#4a7ab5"/>
+      <text x="80" y="30" fill="#e8eef7" font-size="13">ret</text>
+      <text x="80" y="52" fill="#8fa3c8" font-size="11">积木②:栈对齐</text>
+    </g>
+    <g transform="translate(600,105)">
+      <rect width="160" height="70" rx="8" fill="#1a3a2a" stroke="#2ed573" stroke-width="2"/>
+      <text x="80" y="30" fill="#2ed573" font-size="13">system 地址</text>
+      <text x="80" y="52" fill="#8fa3c8" font-size="11">积木③:最终目标</text>
+    </g>
+  </g>
+  <!-- 连锁箭头 -->
+  <g stroke="#ff4757" stroke-width="2" fill="none" marker-end="url(#a4)">
+    <path d="M 220 140 L 235 140"/>
+    <path d="M 400 140 L 415 140"/>
+    <path d="M 580 140 L 595 140"/>
+  </g>
+  <defs><marker id="a4" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L7,3 z" fill="#ff4757"/></marker></defs>
+
+  <!-- 解释 -->
+  <rect x="60" y="210" width="380" height="140" rx="10" fill="#0d1424" stroke="#2a3a5e"/>
+  <text x="250" y="240" text-anchor="middle" fill="#ffc312" font-size="16" font-weight="bold" font-family="sans-serif">为什么能绕过 NX？</text>
+  <text x="250" y="275" text-anchor="middle" fill="#e8eef7" font-size="14" font-family="sans-serif">每条指令都来自程序/libc 原有的代码区</text>
+  <text x="250" y="303" text-anchor="middle" fill="#e8eef7" font-size="14" font-family="sans-serif">不注入新代码 → NX（数据区不可执行）拦不住</text>
+  <text x="250" y="332" text-anchor="middle" fill="#2ed573" font-size="13" font-family="sans-serif">ret 连锁：一个 ret 触发下一块积木</text>
+
+  <rect x="460" y="210" width="380" height="140" rx="10" fill="#0d1424" stroke="#2a3a5e"/>
+  <text x="650" y="240" text-anchor="middle" fill="#a55eea" font-size="16" font-weight="bold" font-family="sans-serif">常用积木（gadget）</text>
+  <text x="650" y="274" text-anchor="middle" fill="#e8eef7" font-size="13" font-family="monospace">pop rdi ; ret　← 最常用（设第1参数）</text>
+  <text x="650" y="302" text-anchor="middle" fill="#e8eef7" font-size="13" font-family="monospace">pop rsi ; ret　← 设第2参数</text>
+  <text x="650" y="330" text-anchor="middle" fill="#8fa3c8" font-size="12" font-family="sans-serif">找积木：ROPgadget --binary vuln --only "pop|ret"</text>
+
+  <text x="450" y="378" text-anchor="middle" fill="#8fa3c8" font-size="13" font-family="sans-serif">心法：不问"有没有完美积木"，而问"能不能用现有积木拼出这个动作"</text>
+</svg>

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#121a2e"/><stop offset="1" stop-color="#0a0e1a"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="420" rx="14" fill="url(#bg)" stroke="#2a3a5e"/>
+  <text x="450" y="40" text-anchor="middle" fill="#00e5ff" font-size="24" font-weight="bold" font-family="sans-serif">内存是一座城市：每间小屋住一个字节，门牌号就是地址</text>
+
+  <!-- 街道 -->
+  <line x1="60" y1="130" x2="840" y2="130" stroke="#2a3a5e" stroke-width="2"/>
+  <text x="55" y="112" fill="#8fa3c8" font-size="12" font-family="monospace">低地址 →</text>
+
+  <!-- 房间 -->
+  <g font-family="monospace" text-anchor="middle">
+    <g transform="translate(90,150)">
+      <rect width="120" height="120" rx="8" fill="#1e3a5f" stroke="#4a7ab5"/>
+      <text x="60" y="26" fill="#8fa3c8" font-size="13">0x1000</text>
+      <text x="60" y="65" fill="#ffc312" font-size="30" font-weight="bold">0x48</text>
+      <text x="60" y="92" fill="#e8eef7" font-size="13">'H'</text>
+    </g>
+    <g transform="translate(220,150)">
+      <rect width="120" height="120" rx="8" fill="#1e3a5f" stroke="#4a7ab5"/>
+      <text x="60" y="26" fill="#8fa3c8" font-size="13">0x1001</text>
+      <text x="60" y="65" fill="#ffc312" font-size="30" font-weight="bold">0x65</text>
+      <text x="60" y="92" fill="#e8eef7" font-size="13">'e'</text>
+    </g>
+    <g transform="translate(350,150)">
+      <rect width="120" height="120" rx="8" fill="#1e3a5f" stroke="#4a7ab5"/>
+      <text x="60" y="26" fill="#8fa3c8" font-size="13">0x1002</text>
+      <text x="60" y="65" fill="#ffc312" font-size="30" font-weight="bold">0x6c</text>
+      <text x="60" y="92" fill="#e8eef7" font-size="13">'l'</text>
+    </g>
+    <g transform="translate(480,150)">
+      <rect width="120" height="120" rx="8" fill="#1e3a5f" stroke="#4a7ab5"/>
+      <text x="60" y="26" fill="#8fa3c8" font-size="13">0x1003</text>
+      <text x="60" y="65" fill="#ffc312" font-size="30" font-weight="bold">0x6c</text>
+      <text x="60" y="92" fill="#e8eef7" font-size="13">'l'</text>
+    </g>
+    <g transform="translate(610,150)">
+      <rect width="120" height="120" rx="8" fill="#1e3a5f" stroke="#4a7ab5"/>
+      <text x="60" y="26" fill="#8fa3c8" font-size="13">0x1004</text>
+      <text x="60" y="65" fill="#ffc312" font-size="30" font-weight="bold">0x6f</text>
+      <text x="60" y="92" fill="#e8eef7" font-size="13">'o'</text>
+    </g>
+  </g>
+
+  <!-- 指针图解 -->
+  <rect x="760" y="150" width="110" height="120" rx="8" fill="#3a2a1a" stroke="#ffc312"/>
+  <text x="815" y="180" text-anchor="middle" fill="#ffc312" font-size="13" font-family="sans-serif">藏宝图</text>
+  <text x="815" y="215" text-anchor="middle" fill="#e8eef7" font-size="12" font-family="monospace">指针 p</text>
+  <text x="815" y="240" text-anchor="middle" fill="#ff4757" font-size="13" font-family="monospace">→ 0x1000</text>
+  <path d="M 760 210 L 580 210" stroke="#ffc312" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#a2)"/>
+  <defs><marker id="a2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+    <path d="M0,0 L0,6 L9,3 z" fill="#ffc312"/></marker></defs>
+
+  <text x="450" y="320" text-anchor="middle" fill="#e8eef7" font-size="16" font-family="sans-serif">字符串 "Hello" 就住在连续的房间里</text>
+  <text x="450" y="355" text-anchor="middle" fill="#8fa3c8" font-size="14" font-family="sans-serif">小端序：低位数字住低门牌号（写 payload 时 p64() 帮你反过来）</text>
+  <text x="450" y="390" text-anchor="middle" fill="#2ed573" font-size="14" font-family="sans-serif">指针 = 装门牌号的盒子，本身不是宝贝 — 顺着它就能「隔空取物」</text>
+</svg>
