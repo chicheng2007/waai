@@ -790,11 +790,11 @@ sec-log-analyzer/
 
 ## 8.3 进阶 · 系统语言路线（36 章）
 
-入口：[tutorial/系统语言/README.md](tutorial/系统语言/README.md) · C/C++ · Rust · Go 各 12 章。走底层、逆向、高性能方向时按需深入。
+入口：[tutorial/02-系统语言/README.md](tutorial/02-系统语言/README.md) · C/C++ · Rust · Go 各 12 章。走底层、逆向、高性能方向时按需深入。
 
 ## 8.4 高级 · 混合编程路线（5 卷 20 章）
 
-入口：[tutorial/混合编程/README.md](tutorial/混合编程/README.md)。以 Python 为胶水层，融合 C/C++、Rust、Go 的性能与安全优势，服务于 AI 工程化与安全工具开发。
+入口：[tutorial/03-混合编程/README.md](tutorial/03-混合编程/README.md)。以 Python 为胶水层，融合 C/C++、Rust、Go 的性能与安全优势，服务于 AI 工程化与安全工具开发。
 
 | 卷 | 内容 | 章 |
 |---|---|---|
@@ -1189,7 +1189,7 @@ Agent 是你给它目标、它自己拆任务调工具多步执行完成的东�
 可以。[checkin-log.md](checkin-log.md) 就是你的打卡地，每天追加一行，还有里程碑清单。让坚持看得见。
 
 **Q23：这个仓库怎么划分 / 目录结构是什么？**
-根目录下：`roadmap/` 是分阶段学习路线，`resources/` 是书籍/链接/Python 路线/硬件，`tutorial/` 是三套完整教程（含 `系统语言/` 和 `混合编程/` 子目录），`datasets/` 是练习日志，`START-HERE.md` 是 14 天实战，`SYNTAX-BOOTCAMP.md` 和 `SYNTAX-REFERENCE.md` 是语法资料。本文开头的目录也可帮你导航。
+根目录下：`roadmap/` 是分阶段学习路线，`resources/` 是书籍/链接/Python 路线/硬件，`tutorial/` 是三套完整教程（分 `01-Python主线/`、`02-系统语言/`、`03-混合编程/` 三个子目录，卷目录按数字编号排序），`datasets/` 是练习日志，`START-HERE.md` 是 14 天实战，`SYNTAX-BOOTCAMP.md` 和 `SYNTAX-REFERENCE.md` 是语法资料。本文开头的目录也可帮你导航。
 
 **Q24：仓库里能出现我的学校/身份信息吗？**
 不能。这是公开仓库，涉及你个人隐私的敏感字样一律不要出现——当前仓库已清理干净。你在提问或提交时也注意别把敏感信息写进公开文件。
