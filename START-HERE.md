@@ -1,594 +1,526 @@
-# 从这里开始 · 零基础手把手超级详细计划
+# 从这里开始 · 网安实战版（14 天做出一个能写进简历的项目）
 
-> 这份计划不用你思考、不用你规划。**每天打开对应那一天，照着做。**
-> 适用：网安专业大二 · 软考备考中 · Python 基础很弱 · 已装 PyCharm · AI/攻防/取证零基础 · 有 LM Studio 本地模型。
+> 不敲 `print` 玩语法了。**14 天，每天一个真任务，最后交付一个完整的"AI 日志研判工具"到 GitHub。**
+> 语法哪里卡了，问本地模型（求助流程在下面），边做边补。
 
 **导航**：[README](README.md) · [每日打卡](checkin-log.md) · [Python 路线](resources/python-roadmap.md) · [硬件环境](resources/hardware-setup.md) · [总览](roadmap/00-overview.md)
 
 ---
 
-## 使用前必读：三条规则
+## 三条规则（照做就行）
 
-1. **只做当天的，别往前翻。** 计划写得再详细，你今天也只做"第 1 天"。做完再说。
-2. **看不懂就问你的本地模型。** 你有 Qwen3.5-9B，它是你的 24 小时助教，问它不要钱、不嫌烦。
-3. **卡住超过 15 分钟，就用下面的"求助流程"，别死磕。**
+1. **只做当天的**，别往前翻。
+2. **不会就问本地模型**——你有 Qwen3.5-9B，它是 24 小时助教，问它不要钱。
+3. **卡住超过 15 分钟就求助**，别死磕（求助模板在下面）。
 
 ---
 
-## PyCharm 速查（每天都要用的几个动作）
-
-你用 PyCharm，就记这几个操作，别的先不管：
+## PyCharm 速查（每天就这四步）
 
 | 我想做什么 | 怎么点 |
 |---|---|
-| 新建代码文件 | 左侧项目树右键 → New → Python File → 输入名字（不用打 `.py`） |
-| 运行代码 | 在代码区右键 → Run '文件名'，或右上角绿色三角 ▶ |
-| 看运行结果 | 底部 **Console**（控制台）窗口 |
-| 看报错 | 底部红色字，从**最后一行**开始读（最后一行才是真正的错） |
-| 装库（如 pandas） | 底部 **Terminal** 输入 `pip install pandas` 回车 |
-| 切换中文显示 | 文件第一行加 `# -*- coding: utf-8 -*-`（PyCharm 一般自动处理，乱码才加） |
+| 新建代码文件 | 左侧项目树右键 → New → Python File → 输入名字 |
+| 运行代码 | 代码区右键 → Run '文件名'，或右上角绿色三角 ▶ |
+| 看结果 / 报错 | 底部 **Console**；报错看**最后一行** |
+| 装库 | 底部 **Terminal** 敲 `pip install 库名` 回车 |
 
-> 每天流程就是：**新建文件 → 写代码 → 右键 Run → 看 Console**。就这四步。
+**每天流程**：新建 `.py` → 写代码 → 右键 Run → 看 Console。
 
 ---
 
 ## 卡住了怎么办（求助流程）
 
-这是整份计划最重要的部分。不会是常态，**会求助才是本事**。
-
-### 第一步：问你的本地模型（Qwen3.5-9B）
-
-打开 LM Studio，原样复制这个模板（把【】里换成你的情况）：
+打开 LM Studio，原样复制（把【】换成你的情况）：
 
 ```
-我是完全零基础的初学者。下面这段代码我看不懂/报错了：
+我是 Python 初学者，正在做日志分析练习。下面这段代码报错了：
 
-【把你的代码整段粘贴在这里】
+【粘贴你的代码】
 
-报错信息是：【把报错原文粘贴在这里，不要改】
+报错信息：【粘贴 Console 里红色字，尤其是最后一行】
 
 请用最简单的话告诉我：
-1. 这行代码在干什么
-2. 哪里错了
-3. 给我改好的完整代码
-4. 像教小学生一样再解释一遍
+1. 哪里错了、为什么
+2. 给我改好的完整代码
+3. 像教小学生一样再解释一遍
 ```
 
-### 第二步：还是看不懂，就追问
-
-```
-你刚才说的我还是不懂。请用"打游戏"或者"做饭"来打比方，再讲一遍。
-```
-
-### 第三步：还不行，来找我问
-
-把你问本地模型的对话截图，或者原样贴给我，我换一种方式给你讲。
-
-> **记住**：报错不是你笨，是代码在跟你说"这里没写好"。看懂报错、会问问题，本身就是编程能力。
+看不懂就追问："请用打游戏/做饭打比方，再讲一遍。" 还不行就来找我问。
 
 ---
 
-## 每天的固定节奏（照这个来）
+## 每天的固定节奏
 
 | 时段 | 做什么 | 时长 |
 |---|---|---|
-| 软考时间 | 看 Summer 的课 / 官方教程 + 做真题 | 1~2 小时 |
-| Python 时间 | 做当天那一天的 Python 任务 | 30 分钟 |
+| 软考 | 看课 / 教程 + 做真题（这是你的主线，别挂） | 1~2 小时 |
+| Python 实战 | 做当天的真任务 | 30~45 分钟 |
 | 打卡 | 在 [checkin-log.md](checkin-log.md) 追加一行 | 1 分钟 |
 
-> 软考是主线，Python 是副线。**两件都要做，但软考时间更多。**
+---
+
+# 14 天实战路线
+
+> 每天结构：软考任务 → 今日实战（含可跑代码）→ 网安联系 → 自检 → 打卡。
+> **最终产物**：一个能分析日志、识别可疑 IP、还能调本地大模型研判的 Python 工具，托管到 GitHub。
 
 ---
 
-# 第一阶段：Python 从零敲起（第 1~14 天，每天 30 分钟）
+## 第 0 天（准备日，10 分钟）：PyCharm 建项目 + 装库
 
-> 目标：从"一行都写不出来"到"能写 50 行小脚本"。
-> 每天结构都一样：**软考任务 → Python 任务（含代码）→ 自检 → 打卡**。
+**目标**：建好项目，装好今天开始要用的库。
 
----
-
-## 第 0 天（准备日，10 分钟）：用 PyCharm 建项目并跑起来
-
-**今天目标**：在 PyCharm 里建一个项目，运行出第一行代码。
-
-**步骤**：
-1. 打开 PyCharm → 点 **New Project**（新建项目）。
-2. 位置（Location）选一个好找的路径，比如 `D:\python-learn`，项目名填 `learn`。
-3. 确认 **Python Interpreter**（解释器）那里选的是已装好的 Python（PyCharm 一般会自动找到）。如果显示 `<No interpreter>`，问你的本地模型：
+1. PyCharm → New Project → 路径选 `D:\sec-log-analyzer`（好记），点 Create。
+2. 底部打开 **Terminal**，逐行执行（一行执行完再下一行）：
+   ```bash
+   pip install requests pandas matplotlib
    ```
-   我在 PyCharm 新建项目时，Python Interpreter 显示 No interpreter，请一步步教我怎么设置解释器。
-   ```
-4. 点 **Create**（创建）。
-5. 在左边项目树里，右键 `learn` 文件夹 → **New** → **Python File**，文件名输入 `day0`。
-6. 在右边打开的编辑区里输入：
-   ```python
-   print(1 + 1)
-   ```
-7. 在代码上**右键 → Run 'day0'**（或点右上角绿色三角 ▶），底部控制台（Console）出现 `2`，就成了。
+3. 建一个文件 `data.py`，输入下面这段，右键 Run，Console 打印出示例日志就成：
 
-**今天到这就结束。** 别贪多。以后每天都这样：新建 `.py` 文件 → 写代码 → 右键 Run。
+```python
+# 这是我们要分析的访问日志样例（Apache/Nginx 格式）
+LOG_SAMPLE = '''192.168.1.100 - - [25/Nov/2026:12:00:01 +0800] "GET /index.html HTTP/1.1" 200 1234
+10.0.0.5 - - [25/Nov/2026:12:00:03 +0800] "POST /login HTTP/1.1" 401 512
+192.168.1.100 - - [25/Nov/2026:12:00:05 +0800] "GET /admin HTTP/1.1" 404 231
+45.33.22.11 - - [25/Nov/2026:12:00:07 +0800] "GET /wp-login.php HTTP/1.1" 404 178'''
+
+for line in LOG_SAMPLE.strip().split("\n"):
+    print(line)
+```
+
+**今天到这就结束。** 这个文件后面每天都要用。
 
 ---
 
-## 第 1 天：敲出你的第一行代码
+## 第 1 天：从日志里统计 IP 出现次数（你的第一个真分析）
 
-**软考任务**：打开官方《网络工程师教程》，只看第 1 章的标题和第一段，了解"计算机网络是什么"。10 分钟即可。
+**软考任务**：教程第 1 章 + 10 道选择题。
 
-**Python 任务**（10 分钟）：
-
-1. 在 PyCharm 里新建文件 `day1`（右键项目 → New → Python File）。
-2. 把这段**完整复制**进去：
-
-```python
-print("你好，我开始了")
-```
-
-3. 右键 → Run 'day1'，底部 Console 输出"你好，我开始了"——**你就已经会写 Python 了**。
-
-**再试一个**（30 秒）：
-
-```python
-print(1 + 1)
-print("攻击检测")
-```
-
-输出 `2` 和 `攻击检测` 就对了。
-
-**自检**：能自己敲一遍 `print("我的名字")`，让它输出你的名字吗？
-
-**打卡**（复制到 checkin-log.md）：
-```
-| 2026-11-25 | Python | 第1天：敲出第一行 print | 10min | 成了！ |
-```
-
----
-
-## 第 2 天：变量——给数据起名字
-
-**软考任务**：看教程第 1 章，搞懂"什么是协议"。
-
-**Python 任务**（20 分钟）：
-
-把这段复制进去运行：
-
-```python
-name = "小明"
-age = 18
-print(name)
-print(age)
-print("我叫" + name, "今年", age, "岁")
-```
-
-**它可能怎么理解**：
-- `name = "小明"` 就是拿一个叫 `name` 的盒子，把"小明"放进去。
-- `print(name)` 就是把盒子里的东西拿出来显示。
-
-**动手改一改**（这一步最关键，一定要改）：
-- 把 `"小明"` 改成你自己的名字
-- 把 `18` 改成你的年龄
-- 再运行一遍
-
-**问本地模型**：
-```
-请用"放东西进盒子"的比喻，解释一下 Python 的变量是什么，再给我 3 个练习小题。
-```
-
-**自检**：能不用看例子，自己写一个变量存你的专业名称并打印出来吗？
-
----
-
-## 第 3 天：数字计算——让电脑帮你算
-
-**软考任务**：看教程，搞懂 IP 地址是什么（软考必考）。
-
-**Python 任务**（20 分钟）：
-
-```python
-a = 10
-b = 3
-print(a + b)   # 加
-print(a - b)   # 减
-print(a * b)   # 乘
-print(a / b)   # 除
-print(a % b)   # 取余数（很重要，后面判断奇偶、查IP都用得上）
-```
-
-**先看懂**：`#` 后面的字是注释，电脑不执行，是给你看的。
-
-**动手改**：把 `a` 和 `b` 换成别的数字，预测结果，再运行对照。
-
-**网安小联系**（提前感受）：一个 IP 是 `192.168.1.1`，用字符串切片取出最后一段：
-
-```python
-ip = "192.168.1.1"
-print(ip[-1])   # 打印最后一个字符
-```
-
-**自检**：`17 % 5` 等于几？先自己算，再运行验证。
-
----
-
-## 第 4 天：判断——让电脑做选择
-
-**软考任务**：做 10 道第 1 章的选择题（真题或课后题）。
-
-**Python 任务**（20 分钟）：
-
-```python
-score = 75
-if score >= 60:
-    print("及格了")
-else:
-    print("不及格")
-```
-
-**怎么看这段**：
-- `if` = "如果"，`else` = "否则"
-- 注意 `print` 前面有**缩进**（空 4 格），这表示"属于 if 管的代码"
-- 缩进是 Python 的规矩，写错就报错
-
-**动手改**：
-1. 把 `score` 改成 55，看输出什么
-2. 改成 100，看输出什么
-3. 加一个判断：如果 `score >= 90`，打印"优秀"
-
-**网安小练习**：判断一个端口是不是常见端口：
-
-```python
-port = 80
-if port == 80:
-    print("这是 HTTP 端口")
-else:
-    print("其他端口")
-```
-
-**自检**：能写一个判断"今天是星期几，如果是周末就打印'休息'"的程序吗？
-
----
-
-## 第 5 天：循环——让电脑重复干活
-
-**软考任务**：看教程，搞懂 subnet mask（子网掩码）的基本概念。
-
-**Python 任务**（20 分钟）：
-
-```python
-for i in range(5):
-    print(i)
-```
-
-**先看懂**：`range(5)` 产生 0,1,2,3,4 五个数；`for` 挨个取出来打印。
-
-**输出应该是**：
-```
-0
-1
-2
-3
-4
-```
-
-**动手改**：
-1. 改成 `range(1, 6)`，看看输出什么（提示：从 1 到 5）
-2. 写一个打印 1 到 10 的循环
-
-**网安小练习**：批量打印常见端口号：
-
-```python
-ports = [21, 22, 80, 443]
-for p in ports:
-    print("端口:", p)
-```
-
-**自检**：能写一个循环，打印 10 次"我在学 Python"吗？
-
----
-
-## 第 6 天：列表——装一串数据
-
-**软考任务**：做 10 道 TCP/IP 相关的选择题。
-
-**Python 任务**（20 分钟）：
-
-```python
-fruits = ["苹果", "香蕉", "橘子"]
-print(fruits[0])      # 第一个
-print(fruits[-1])     # 最后一个
-print(len(fruits))    # 有几个
-
-for f in fruits:
-    print("水果:", f)
-```
-
-**先看懂**：
-- `[]` 是列表，能装一串东西
-- `fruits[0]` 取第一个（程序员从 0 开始数）
-- `len()` 数有几个
-
-**动手改**：把你喜欢的 3 个东西放进列表，用循环打印出来。
-
-**网安小练习**：存几个可疑 IP：
-
-```python
-suspicious_ips = ["192.168.1.1", "10.0.0.5", "172.16.0.9"]
-for ip in suspicious_ips:
-    print("可疑IP:", ip)
-```
-
-**自检**：能创建一个存 5 个端口号的列表，并用 `len()` 打印数量吗？
-
----
-
-## 第 7 天：复习 + 第一个完整小程序
-
-**软考任务**：把本周看的内容，用自己的话在纸上写 5 行总结。
-
-**Python 任务**（30 分钟）：
-
-**先复习**：把第 1~6 天的代码全部重新敲一遍（不看例子，凭记忆），卡住就看当天笔记。
-
-**再做一个完整小程序**——猜数字：
-
-```python
-secret = 7
-guess = int(input("猜一个1到10的数字: "))
-
-if guess == secret:
-    print("恭喜猜对了！")
-elif guess > secret:
-    print("太大了")
-else:
-    print("太小了")
-```
-
-**新东西**：
-- `input()` 让用户输入内容
-- `int()` 把输入的文字变成数字
-- `elif` = "否则如果"
-
-**动手玩**：运行 3 次，故意猜错，看提示对不对。
-
-**自检**：不看例子，能写出这个猜数字程序吗？（写不出就重敲 3 遍）
-
-**这一周你已经学会了**：打印、变量、计算、判断、循环、列表。**这是编程最核心的 60%。**
-
----
-
-## 第 8 天：字典——IP 和次数对应起来
-
-**软考任务**：看教程路由相关章节。
-
-**Python 任务**（20 分钟）：
-
-```python
-ip_count = {"192.168.1.1": 3, "10.0.0.1": 5}
-
-print(ip_count["192.168.1.1"])   # 取出对应的值
-
-for ip, count in ip_count.items():
-    print(ip, "出现", count, "次")
-```
-
-**先看懂**：字典是"键: 值"的对应表，像电话本——名字找号码。
-
-**网安小练习**：这就是日志分析的雏形！统计 IP 出现次数：
-
-```python
-ip_count = {}
-ip_count["192.168.1.1"] = 1
-ip_count["192.168.1.1"] = ip_count["192.168.1.1"] + 1
-print(ip_count)
-```
-
-**自检**：能创建一个字典存 3 个端口和它们的服务名（如 80:HTTP），并打印出来吗？
-
----
-
-## 第 9 天：函数——把代码打包复用
-
-**软考任务**：做 10 道路由/交换的题。
-
-**Python 任务**（20 分钟）：
-
-```python
-def add(a, b):
-    return a + b
-
-result = add(3, 5)
-print(result)
-```
-
-**先看懂**：`def` 定义函数，`return` 返回结果。函数就是"起个名字的一段代码，随时拿来用"。
-
-**动手改**：
-1. 写一个 `is_even(n)` 函数，判断偶数返回 True，奇数返回 False
-2. 写一个 `check_port(p)` 函数，端口是 80 就返回"HTTP"
-
-**自检**：能写一个函数，输入两个数，返回较大的那个吗？
-
----
-
-## 第 10 天：文件读写——处理真实数据
-
-**软考任务**：看网络安全基础章节。
-
-**Python 任务**（20 分钟）：
-
-```python
-# 写入文件
-with open("test.txt", "w", encoding="utf-8") as f:
-    f.write("你好，这是第一行\n")
-    f.write("这是第二行\n")
-
-# 读取文件
-with open("test.txt", "r", encoding="utf-8") as f:
-    content = f.read()
-    print(content)
-```
-
-**先看懂**：
-- `open()` 打开文件，`"w"` 是写，`"r"` 是读
-- `encoding="utf-8"` 是处理中文必须的，忘了会乱码
-- `with` 帮你自动关闭文件
-
-**网安小练习**：把你的可疑 IP 列表写到文件里。
-
-**自检**：能写一个文件，写入你的名字，再读出来打印吗？
-
----
-
-## 第 11 天：正则入门——从文本里捞 IP
-
-**软考任务**：看网络管理章节。
-
-**Python 任务**（20 分钟）：
-
-```python
-import re
-
-text = "攻击源是 192.168.1.1，目标是 10.0.0.5"
-ips = re.findall(r"\d+\.\d+\.\d+\.\d+", text)
-print(ips)
-```
-
-**先看懂**：`\d` 表示数字，`+` 表示一个或多个，`\.` 表示小数点。这串就是"匹配 IP 地址的格式"。
-
-**不用背**——正则靠查和问，用到再学。你现在只要知道"有这个工具能捞文本里的规律"。
-
-**问本地模型**：
-```
-请用最简单的话解释上面这个正则表达式每一段的意思，再给我 3 个练习：提取邮箱、提取 URL、提取时间。
-```
-
-**自检**：能改一下正则，从文本里提取所有的手机号（11 位数字）吗？
-
----
-
-## 第 12 天：词频统计——你的第一个"数据分析"
-
-**软考任务**：做一套综合选择题。
-
-**Python 任务**（20 分钟）：
+**今日实战**：新建 `day1.py`，统计每个 IP 访问了多少次：
 
 ```python
 from collections import Counter
+from data import LOG_SAMPLE
 
-text = "attack attack defense attack scan"
-words = text.split()
-counts = Counter(words)
-print(counts)
-print(counts.most_common(2))
+ips = []
+for line in LOG_SAMPLE.strip().split("\n"):
+    ip = line.split()[0]          # 每行第一个空格前就是 IP
+    ips.append(ip)
+
+counts = Counter(ips)
+for ip, n in counts.most_common():
+    print(f"{ip}: {n} 次")
 ```
 
-**先看懂**：`Counter` 自动帮你数每个词出现几次，`most_common(2)` 列出最多的 2 个。
+**预期输出**：能看到 `192.168.1.100: 2 次`，其他各 1 次。
 
-**网安联系**：把 `text` 换成一段日志，统计哪个 IP 出现最多——这就是攻击检测的雏形。
+**网安联系**：访问次数异常高的 IP，可能是扫描器或攻击者——这就是最朴素的威胁检测。
 
-**自检**：给一段文字，能数出出现最多的 3 个词吗？
+**自检**：能改成"只显示访问超过 1 次的 IP"吗？（提示：`if n > 1`）
+
+**打卡**：`| 日期 | 网安实战 | 第1天：日志IP统计 | 30min | 状态 |`
 
 ---
 
-## 第 13 天：密码强度检查器（综合练习）
+## 第 2 天：用正则提取完整字段（IP / 时间 / 请求 / 状态码）
 
-**软考任务**：整理本周错题。
+**软考任务**：搞懂 TCP/IP 分层。
 
-**Python 任务**（30 分钟）：
-
-自己写，写不出来就问本地模型。要求：
-1. 让用户输入一个密码
-2. 判断长度是否 >= 8
-3. 判断是否包含数字
-4. 打印"强"或"弱"
-
-**参考思路**（先自己写，再看这个）：
+**今日实战**：新建 `day2.py`：
 
 ```python
-password = input("请输入密码: ")
+import re
+from data import LOG_SAMPLE
 
-if len(password) >= 8 and any(c.isdigit() for c in password):
-    print("密码强度: 强")
-else:
-    print("密码强度: 弱，至少要8位且含数字")
+# 正则四个括号 = 四个要提取的字段
+pattern = r'(\d+\.\d+\.\d+\.\d+).*?\[(.*?)\].*?"(\w+ \S+).*?" (\d+)'
+
+for line in LOG_SAMPLE.strip().split("\n"):
+    m = re.match(pattern, line)
+    if m:
+        ip, time, request, status = m.groups()
+        print(f"IP={ip} | 时间={time} | 请求={request} | 状态码={status}")
 ```
 
-**自检**：不看参考，能自己写出来吗？写不出来就抄 3 遍再自己写。
+**看不懂正则？** 原样问本地模型："请逐段解释 `r'(\d+\.\d+\.\d+\.\d+).*?\[(.*?)\].*?"(\w+ \S+).*?" (\d+)'` 这段正则。" 它会一段段讲。
+
+**网安联系**：状态码 401（未授权）、404（不存在）大量出现，往往是攻击尝试。
+
+**自检**：能改成只打印状态码是 404 的行吗？
 
 ---
 
-## 第 14 天：阶段验收 + 休息
+## 第 3 天：识别可疑 IP（条件判断 + 字典）
 
-**软考任务**：做一套真题，看看自己错在哪。
+**软考任务**：IP 地址与子网划分（软考重点，多做几道）。
 
-**Python 任务**（30 分钟）：
+**今日实战**：新建 `day3.py`，标记"访问 /admin 或 /wp-login.php 的 IP"为可疑：
 
-**验收清单**（能做完就过关）：
-- [ ] 不看例子，写出打印自己名字的程序
-- [ ] 写一个判断成绩及格的 if 程序
-- [ ] 写一个打印 1~10 的循环
-- [ ] 创建一个列表和字典，并遍历它们
-- [ ] 写一个函数并返回结果
-- [ ] 读写一个文本文件
-- [ ] 用正则提取一段文字里的 IP
-- [ ] 独立写出密码强度检查器
+```python
+import re
+from data import LOG_SAMPLE
 
-**全打勾了**：恭喜，**你已经不是零基础了**。可以进入 [Python 路线](resources/python-roadmap.md) 的台阶 2~4 继续深入。
+pattern = r'(\d+\.\d+\.\d+\.\d+).*?"(\w+ \S+)'
+suspicious = {}
 
-**没全打勾**：没关系，把没打勾的那天重新做一遍。没有人 14 天就全会的，包括我。
+for line in LOG_SAMPLE.strip().split("\n"):
+    m = re.match(pattern, line)
+    if m:
+        ip, request = m.groups()
+        if "/admin" in request or "/wp-login" in request:
+            suspicious[ip] = suspicious.get(ip, 0) + 1
 
-**今天可以休息一下。** 你已经走了很远。
+print("=== 可疑 IP ===")
+for ip, n in suspicious.items():
+    print(f"{ip}: 命中 {n} 次敏感路径")
+```
 
----
+**网安联系**：`/wp-login.php`（WordPress 后台）、`/admin` 是扫描器最爱探测的路径，命中就是强信号。
 
-# 第二阶段（第 3~8 周）：软考冲刺 + Python 进阶
-
-> 到这一步你已经会基础了。节奏改成：软考全力冲刺，Python 保持每天 30 分钟。
-
-## 软考（这阶段的主线）
-
-| 时间 | 任务 |
-|---|---|
-| 每天 | 看课 + 教程 1 章 + 对应真题 20 道 |
-| 每周 | 做 1 套完整模拟题，记录分数 |
-| 考前 2 周 | 只看错题和真题，不学新内容 |
-
-**重点**：下午案例题必须**动手写**，别只看答案。
-
-## Python（每天 30 分钟，按顺序推进）
-
-| 周 | 学什么 | 练什么 |
-|---|---|---|
-| 第 3 周 | 台阶 2：文件/CSV/JSON 深入 | 写一个日志统计脚本 |
-| 第 4 周 | 台阶 3：正则表达式深入 | 写一个日志清洗器 |
-| 第 5 周 | 台阶 4：pandas 入门 | 读 KDD99 数据集，做统计 |
-| 第 6 周 | 台阶 4：matplotlib 画图 | 把统计结果画成柱状图 |
-| 第 7 周 | 台阶 6：虚拟环境 + Git | 建一个 GitHub 小项目 |
-| 第 8 周 | 复习 + 做一个综合小项目 | 日志分析器：读日志→提IP→统计→画图 |
-
-> 详细内容见 [Python 学习路线](resources/python-roadmap.md)。
+**自检**：能再加一个敏感路径 `/phpmyadmin` 的判断吗？
 
 ---
 
-# 第三阶段（软考通过后）：三线正式展开
+## 第 4 天：把分析封装成函数（可复用）
 
-> 软考过了，时间分配改成：网安 40% / AI 50% / 专业课 10%。
+**软考任务**：做一套真题的上午选择题。
 
-| 阶段 | 学什么 | 详见 |
-|---|---|---|
-| AI 阶段 1 | 吴恩达 ML + sklearn + KDD99 项目 | [02](roadmap/02-ml-basics.md) |
-| AI 阶段 2 | 李沐深度学习 + PyTorch（用你的 5060 GPU）+ 网安项目 | [03](roadmap/03-deep-learning.md) |
-| AI 阶段 3 | 大模型 + Agent（用你的 Qwen3.5-9B 做实验） | [04](roadmap/04-llm-agent.md) |
-| 网安线 | CTF 刷题 + 火眼取证深入 | [01](roadmap/01-soft-exam.md) |
+**今日实战**：新建 `day4.py`，把前几天的代码整理成函数：
+
+```python
+import re
+from collections import Counter
+from data import LOG_SAMPLE
+
+def parse_log(text):
+    """把日志文本解析成 (ip, request, status) 列表"""
+    pattern = r'(\d+\.\d+\.\d+\.\d+).*?"(\w+ \S+).*?" (\d+)'
+    results = []
+    for line in text.strip().split("\n"):
+        m = re.match(pattern, line)
+        if m:
+            results.append(m.groups())
+    return results
+
+def top_ips(records, n=3):
+    """返回访问次数前 n 的 IP"""
+    return Counter(r[0] for r in records).most_common(n)
+
+records = parse_log(LOG_SAMPLE)
+print("解析出", len(records), "条记录")
+print("访问最多的 IP:", top_ips(records))
+```
+
+**网安联系**：真实工具都是这样组织的——解析函数、分析函数分开，方便复用和扩展。
+
+**自检**：能写一个 `count_status(records)` 函数，统计各状态码数量吗？
 
 ---
 
-## 最后：你只需要记住这三句
+## 第 5 天：把结果导出成文件（CSV）
 
-1. **今天只做第 1 天。** 别想后面。
-2. **不会就问本地模型。** 这是你的超能力。
-3. **敲代码，别只看。** 看懂不等于会写。
+**软考任务**：网络安全基础章节。
 
-**现在，去敲 `print("你好，我开始了")`。** 就这一行。
+**今日实战**：新建 `day5.py`，把分析结果存成 CSV：
+
+```python
+import csv
+from day4 import parse_log, top_ips
+from data import LOG_SAMPLE
+
+records = parse_log(LOG_SAMPLE)
+
+with open("result.csv", "w", newline="", encoding="utf-8-sig") as f:
+    writer = csv.writer(f)
+    writer.writerow(["IP", "访问次数"])          # 表头
+    for ip, n in top_ips(records):
+        writer.writerow([ip, n])
+
+print("已导出 result.csv，用 PyCharm 或 Excel 打开看看")
+```
+
+**新东西**：`encoding="utf-8-sig"` 让 Excel 打开中文不乱码。
+
+**网安联系**：真实取证/分析工作，结果都要导出成报告或表格留档。
+
+**自检**：能把可疑 IP 也导进同一个 CSV 吗？
 
 ---
 
-*制定：2026-11-25 · 配合 [每日打卡](checkin-log.md) 使用，每做完一天就打一次卡。*
+## 第 6 天：用 pandas 做专业分析
+
+**软考任务**：路由基础。
+
+**今日实战**：新建 `day6.py`：
+
+```python
+import pandas as pd
+from day4 import parse_log
+from data import LOG_SAMPLE
+
+records = parse_log(LOG_SAMPLE)
+df = pd.DataFrame(records, columns=["IP", "请求", "状态码"])
+
+print(df)
+print("\n各状态码数量:")
+print(df["状态码"].value_counts())
+print("\n每个 IP 的访问次数:")
+print(df["IP"].value_counts())
+```
+
+**网安联系**：pandas 是安全数据分析的主力工具，比手写循环快得多，真实工作天天用。
+
+**自检**：能筛选出状态码是 404 的所有行吗？（提示：`df[df["状态码"] == "404"]`）
+
+---
+
+## 第 7 天：画一张攻击趋势图
+
+**软考任务**：整理错题。
+
+**今日实战**：新建 `day7.py`：
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+from day4 import parse_log
+from data import LOG_SAMPLE
+
+df = pd.DataFrame(parse_log(LOG_SAMPLE), columns=["IP", "请求", "状态码"])
+counts = df["IP"].value_counts()
+
+counts.plot(kind="bar", color="#d62728")
+plt.title("IP 访问次数统计")
+plt.xlabel("IP")
+plt.ylabel("次数")
+plt.tight_layout()
+plt.savefig("ip_stats.png")
+plt.show()
+```
+
+**注意**：matplotlib 中文可能显示成方块，问本地模型："matplotlib 中文显示成方框怎么解决？" 它会给你设置字体的方法。
+
+**网安联系**：可视化是给领导/同事看分析报告的关键技能，一张图胜过千言。
+
+**自检**：能改成画状态码分布的饼图吗？
+
+---
+
+## 第 8 天：综合项目 v1 —— 命令行版日志分析器
+
+**软考任务**：做一套完整模拟题。
+
+**今日实战**：新建 `analyzer.py`，把前面所有功能整合成一个工具：
+
+```python
+from day4 import parse_log, top_ips
+from data import LOG_SAMPLE
+
+def analyze(text):
+    records = parse_log(text)
+    print("=== 日志分析报告 ===")
+    print(f"总记录数: {len(records)}")
+    print("\n访问最多的 IP:")
+    for ip, n in top_ips(records):
+        print(f"  {ip}: {n} 次")
+    
+    suspicious = [r for r in records if "/admin" in r[1] or "wp-login" in r[1]]
+    print(f"\n可疑请求: {len(suspicious)} 条")
+    for ip, req, status in suspicious:
+        print(f"  {ip} -> {req}")
+
+if __name__ == "__main__":
+    analyze(LOG_SAMPLE)
+```
+
+**网安联系**：这就是一个能用的小工具雏形了。加上 AI 分析就是完整产品。
+
+**自检**：能运行它并读懂每一行输出吗？
+
+---
+
+## 第 9 天：调用你的本地大模型（LM Studio API）
+
+**软考任务**：网络管理章节。
+
+**前置**：打开 LM Studio → **Developer** 标签 → 点 **Start Server**，记下地址（一般是 `http://localhost:1234`）。
+
+**今日实战**：新建 `ai_client.py`：
+
+```python
+import requests
+
+def ask_local_ai(question):
+    url = "http://localhost:1234/v1/chat/completions"
+    payload = {
+        "model": "local-model",   # LM Studio 里模型名随便写都行
+        "messages": [{"role": "user", "content": question}],
+        "temperature": 0.3,
+    }
+    resp = requests.post(url, json=payload, timeout=60)
+    return resp.json()["choices"][0]["message"]["content"]
+
+if __name__ == "__main__":
+    print(ask_local_ai("用一句话解释什么是 SQL 注入"))
+```
+
+**预期**：LM Studio 里能看到请求进来了，Console 打印模型的回答。
+
+**排错**：连不上就问本地模型："LM Studio 开了 server 但 Python requests 连不上 localhost:1234，可能是什么原因？"
+
+**网安联系**：你已经把本地 AI 接进代码了——这是 Agent 开发的第一步。
+
+**自检**：能让它解释"什么是端口扫描"吗？
+
+---
+
+## 第 10 天：让 AI 帮你研判可疑 IP（项目核心）
+
+**软考任务**：做 10 道案例题。
+
+**今日实战**：新建 `day10.py`，把日志分析结果喂给本地模型，让它判断：
+
+```python
+from day4 import parse_log
+from data import LOG_SAMPLE
+from ai_client import ask_local_ai
+
+records = parse_log(LOG_SAMPLE)
+suspicious = [r for r in records if "/admin" in r[1] or "wp-login" in r[1]]
+
+summary = "以下是可疑访问记录（IP, 请求, 状态码）：\n"
+for ip, req, status in suspicious:
+    summary += f"- {ip} {req} {status}\n"
+
+question = f"""你是网络安全分析师。请分析这些日志：
+{summary}
+请回答：
+1. 哪些 IP 最可疑？为什么？
+2. 这可能是什么类型的攻击？
+3. 给出 3 条处置建议。
+用简洁的中文回答。"""
+
+print(ask_local_ai(question))
+```
+
+**网安联系**：这就是 AI+网安的真实场景——让大模型帮你从海量日志里快速研判，你做最终决策。
+
+**注意**：本地 9B 模型能力有限，回答可能不完美——**这正是你要练的：判断 AI 说得对不对**，别盲信。
+
+**自检**：AI 的分析有哪里说得不对？你能指出来吗？
+
+---
+
+## 第 11 天：模块化整理 + Git 版本管理
+
+**软考任务**：复习薄弱章节。
+
+**今日实战**：
+1. 整理项目结构（在 PyCharm 里拖动文件）：
+   ```
+   sec-log-analyzer/
+   ├── analyzer.py        # 主程序
+   ├── parser.py          # 解析（由 day4.py 改名）
+   ├── ai_client.py       # AI 接口
+   ├── data.py            # 样例日志
+   └── README.md          # 项目说明（下一步写）
+   ```
+2. PyCharm 底部 **Terminal** 执行：
+   ```bash
+   git init
+   git add .
+   git commit -m "first version: log analyzer with local AI"
+   ```
+
+**网安联系**：版本管理是工程基本功，也是你 GitHub 作品集的基础。
+
+**自检**：能说清楚每个文件是干什么的吗？
+
+---
+
+## 第 12 天：写项目 README（这是给招生老师/面试官看的）
+
+**软考任务**：模拟题一套。
+
+**今日实战**：新建 `README.md`，参考这个结构：
+
+```markdown
+# AI 日志研判工具
+
+## 项目简介
+用 Python + 本地大模型（Qwen3.5-9B）分析 Web 访问日志，
+自动统计 IP、识别可疑请求，并调用本地 AI 生成研判报告。
+
+## 功能
+- 解析 Apache/Nginx 访问日志
+- 统计 IP 访问频次、状态码分布
+- 识别访问 /admin、/wp-login.php 等敏感路径的可疑 IP
+- 调用本地 LM Studio 模型生成研判建议
+- 导出 CSV 报表、可视化图表
+
+## 使用方法
+1. 安装依赖：pip install requests pandas matplotlib
+2. 打开 LM Studio 并在 Developer 标签启动 Server
+3. 运行：python analyzer.py
+
+## 技术栈
+Python · requests · pandas · matplotlib · LM Studio (Qwen3.5-9B)
+
+## 法律声明
+本项目仅用于合法学习，日志数据为模拟样例。
+```
+
+**网安联系**：README 写得好，项目价值翻倍。这是你 14 天成果的门面。
+
+---
+
+## 第 13 天：把项目推上 GitHub
+
+**软考任务**：查漏补缺。
+
+**今日实战**：
+1. 去 GitHub 新建一个空仓库（比如 `sec-log-analyzer`），**不要**勾选 README。
+2. 在 PyCharm Terminal 执行（换成你自己的地址和用户名）：
+   ```bash
+   git remote add origin https://github.com/你的用户名/sec-log-analyzer.git
+   git push -u origin main
+   ```
+3. 打开仓库页面，确认文件都在、README 显示正常。
+
+**网安联系**：GitHub 主页就是你的技术简历。这个项目是你第一个像样的作品。
+
+**自检**：能给同学讲清楚这个项目做了什么吗？
+
+---
+
+## 第 14 天：验收 + 写下一段计划
+
+**软考任务**：做一套真题检验。
+
+**验收清单**（对照打勾）：
+- [ ] 能解析日志、统计 IP、状态码
+- [ ] 能用正则提取字段
+- [ ] 能识别可疑 IP
+- [ ] 能用 pandas 分析、matplotlib 画图
+- [ ] 能调用本地 Qwen3.5-9B 并让它研判日志
+- [ ] 项目结构清晰、有 README、已上 GitHub
+
+**全打勾了**：你不再"基础很弱"了。**你已经有了第一个 AI+网安实战项目。**
+
+**下一步**：回到 [学习路线](roadmap/00-overview.md)，按你的节奏推进软考和后续阶段。或者继续深入这个项目（比如接更多数据源、加规则引擎、做 Web 界面）。
+
+**今天可以休息。** 14 天，你从"啥都不会"走到了"有项目"，值得。
+
+---
+
+## 最后三句
+
+1. 只做当天，别焦虑后面。
+2. 不会就问本地模型——这是你的超能力。
+3. 边做边学语法，比先学语法再做快 10 倍。
+
+**现在开始第 0 天：打开 PyCharm，建项目，装库。** 那三个 `pip install` 敲完，你就上路了。
+
+---
+
+*制定：2026-11-25 · 实战项目配合 [每日打卡](checkin-log.md)，每做完一天打一次卡。*
