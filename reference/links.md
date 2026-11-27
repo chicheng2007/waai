@@ -104,6 +104,8 @@
 
 ## 八、Agent 开发（大三以后）
 
+> AI 自动解题方向延伸阅读：**[CTF-Dojo 论文深度解读](../reference/CTF-Dojo-论文解读.md)**（本仓库整理，出处：arXiv:2508.18370v2 · 三叉戟AI手记公众号）
+
 | 资源 | 链接 | 说明 |
 |---|---|---|
 | LangChain 文档 | https://python.langchain.com | 最主流的 Agent 框架 |
