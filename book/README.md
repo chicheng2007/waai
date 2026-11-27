@@ -1,6 +1,8 @@
 # 从零开始训练取证 AI Agent
 
 > 一套写给**网安专业学生**的、从零基础到能独立训练「数字取证 AI / Agent」的完整实战教程。全程约 **10 万字**，24 章，按「认知 → 数据 → 模型 → Agent → 项目 → 进阶」六部分递进。
+>
+> **章节导航**：[SUMMARY.md](SUMMARY.md) ｜ 本书位于仓库 `book/` 目录，clone 后可离线通读。
 
 ![status](https://img.shields.io/badge/status-持续更新-brightgreen)
 ![words](https://img.shields.io/badge/总字数-约10万-orange)
