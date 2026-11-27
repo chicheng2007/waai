@@ -38,12 +38,13 @@ Python 自己就在用 ctypes 调用 libc。我们可以直接试试：
 ```python
 import ctypes
 import os
+import sys
 
 # 加载 C 标准库
 # Linux: libc.so.6, macOS: libSystem.dylib, Windows: msvcrt
 if os.name == 'nt':
     libc = ctypes.CDLL('msvcrt')
-elif 'darwin' in os.sys.platform:
+elif 'darwin' in sys.platform:
     libc = ctypes.CDLL('libSystem.dylib')
 else:
     libc = ctypes.CDLL('libc.so.6')

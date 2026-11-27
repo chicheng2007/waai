@@ -25,5 +25,5 @@
 - 语法不会 → [guides/（语法学习区）](../guides/README.md)
 - 语言 / 工具手册 → [tools/（工具路线区）](../tools/README.md)
 - 书单 / 链接 / 硬件 → [reference/（参考资料区）](../reference/README.md)
-- 五套完整系统教程 → [tutorial/索引.md](../tutorial/索引.md)
+- 六套完整系统教程 → [tutorial/索引.md](../tutorial/索引.md)
 - 每天打卡 → [checkin-log.md](../checkin-log.md)

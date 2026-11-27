@@ -107,7 +107,7 @@ nvcc --version          # 验证
 关键原则：
 
 - **驱动版本 ≥ CUDA 版本要求的最低驱动**（向下兼容：`nvidia-smi` 显示的 CUDA Version 是驱动支持的最高版本）
-- **AI 框架版本 ↔ CUDA 版本**：PyTorch 不同版本绑定不同 CUDA（如 cu118、cu121）
+- **AI 框架版本 ↔ CUDA 版本**：PyTorch 不同版本绑定不同 CUDA（如 cu126、cu128）。本机 RTX 5060 属 Blackwell 架构（sm_120），必须用 CUDA 12.8+ / PyTorch 2.7+ 的 cu128 构建，cu121 等旧构建无法调用 GPU。
 
 查看驱动支持的最高 CUDA：
 
@@ -134,8 +134,8 @@ cuDNN 是深度学习加速库（卷积、RNN 等优化）。PyTorch/TensorFlow 
 python3 -m venv ai-env
 source ai-env/bin/activate
 
-# 从 PyTorch 官网选对应 CUDA 版本安装（以 cu121 为例）
-pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+# 从 PyTorch 官网选对应 CUDA 版本安装（以 cu128 为例，Blackwell 显卡必须 cu128）
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
 ```
 
 验证 GPU 可用：

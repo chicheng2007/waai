@@ -427,6 +427,7 @@ print(ask_local_ai(question))
    ├── data.py            # 样例日志
    └── README.md          # 项目说明（下一步写）
    ```
+   > **注意**：`day4.py` 改名为 `parser.py` 后，要把 `analyzer.py`、`day10.py` 等文件里的 `from day4 import ...` 同步改成 `from parser import ...`（用 PyCharm 的 Refactor → Rename 改名可自动完成），否则第 12 天运行 `python analyzer.py` 会报 ModuleNotFoundError。
 2. PyCharm 底部 **Terminal** 执行：
    ```bash
    git init

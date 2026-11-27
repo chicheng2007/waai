@@ -49,7 +49,7 @@
 - 去 [PyTorch 官网](https://pytorch.org/get-started/locally/) 选配置：Stable → Windows → Pip → Python → **CUDA 12.x**（选最新的 CUDA 版本），复制生成的安装命令执行。
 - 例（具体版本以官网生成命令为准）：
   ```bash
-  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+  pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu128
   ```
 
 ### 步骤 3：验证 GPU 可用
