@@ -14,7 +14,7 @@
 > 本报告为二手整理与扩展分析，**原始出处如下**，如与原文有出入以原始论文为准：
 >
 > - **学术论文**：Terry Yue Zhuo, Dingmin Wang, Hantian Ding, Varun Kumar, Zijian Wang. *Training Language Model Agents to Find Vulnerabilities with CTF-Dojo*. **arXiv:2508.18370v2**, 2025-09-23. <https://arxiv.org/abs/2508.18370>
-> - **中文解读**：三叉戟AI手记，《CTF-Dojo：如何训练 CTF Agent》，微信公众号，2025-10-31. <https://mp.weixin.qq.com/s/xRqwxGuJTwzV5Phg5UjCzQ>
+> - **中文解读**：三叉戟AI手记，《CTF-Dojo：如何训练 CTF Agent》，微信公众号，2026-10-31. <https://mp.weixin.qq.com/s/xRqwxGuJTwzV5Phg5UjCzQ>
 > - **开源代码 / 数据**：AWS 官方仓库 <https://github.com/amazon-science/CTF-Dojo>
 >
 > 整理日期：2026-11-27 · 本报告中的表格数字与实验结果均来自上述论文，整理者的独立分析观点已随文标注。
@@ -364,7 +364,7 @@ CTF-Dojo 做了一件朴素但扎实的事：把 658 道公开题目变成可执
 ## 参考文献
 
 1. Terry Yue Zhuo, Dingmin Wang, Hantian Ding, Varun Kumar, Zijian Wang. *Training Language Model Agents to Find Vulnerabilities with CTF-Dojo*. arXiv:2508.18370v2, 2025-09-23.
-2. 三叉戟AI手记，《CTF-Dojo：如何训练 CTF Agent》，微信公众号，2025-10-31。
+2. 三叉戟AI手记，《CTF-Dojo：如何训练 CTF Agent》，微信公众号，2026-10-31。
 3. 开源仓库：`amazon-science/CTF-Dojo`（数据集与代码）。
 4. EnIGMA / EnIGMA+：用于管理模型与环境多轮交互的 Agent 框架。
 5. Cyber-Zero：用于对比的合成轨迹安全工作，使用 9,464 条训练轨迹。
