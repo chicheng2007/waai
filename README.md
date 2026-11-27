@@ -762,7 +762,7 @@ sec-log-analyzer/
 
 > 总入口见 [tutorial/索引.md](tutorial/索引.md)。仓库收录六套完整教程，合计 **185 章、约 120 万字**，都是零基础友好、代码驱动、每章有可运行代码 + 逐行解释 + 配套练习。
 >
-> **另有一本独立成书的长篇教程**：[《从零开始训练取证 AI Agent》](book/README.md)（24 章 / 约 10 万字，位于 `book/` 目录，含完整目录导航 [SUMMARY.md](book/SUMMARY.md)）。
+> **另有一本独立成书的长篇实战教程**：[《电子取证 AI / Agent 制作实战（CTF 辅助）》](book/README.md)（24 章，以电子取证为主线、CTF 为辅助训练场，位于 `book/` 目录，含完整目录导航 [SUMMARY.md](book/SUMMARY.md)）。
 
 ## 8.1 六套教程总览
 
