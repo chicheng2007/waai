@@ -8,5 +8,6 @@
 |---|---|---|---|
 | Python 编程：从入门到实践（第 3 版）— Eric Matthes | [Python编程从入门到实践/](Python编程从入门到实践/) | PDF + EPUB | Python 入门到实践，配合 tutorial/01-Python主线 |
 | 机器学习 — 周志华（西瓜书） | [机器学习/](机器学习/) | EPUB | 机器学习经典教材，配合 tutorial 的 ML / AI 章节 |
+| PHP 和 MySQL Web 开发（原书第 5 版）— Larry Ullman | [PHP和MySQL Web开发/](PHP和MySQL Web开发/) | PDF | Web 后端开发经典教材，PHP + MySQL 入门到实践 |
 
 > ⚠️ **版权说明**：这些电子书仅供个人学习使用，请遵守相关版权法规；不要在未经授权的情况下公开传播或在公开仓库分发。若版权方提出异议，应及时移除。
