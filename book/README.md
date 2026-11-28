@@ -142,6 +142,7 @@
 - 资料速查 → [reference/](../reference/README.md)
 - Pwn 二进制教程 → [pwn-academy/](../pwn-academy/01-core/README.md)
 - 14 天实战计划 → [START-HERE.md](../START-HERE.md)（本书 ch21 是它的深度扩展）
+- 兄弟教程：[《Wireshark 从入门到精通》](wireshark/README.md)（43 章，抓包 · 协议解析 · 流量分析实战，位于 `book/wireshark/`，[目录导航](wireshark/SUMMARY.md)）
 
 ---
 
