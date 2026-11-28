@@ -20,4 +20,4 @@
 
 - 语法不会 → [guides/（语法学习区）](../guides/README.md)
 - 书籍 / 链接 / 硬件 → [reference/（参考资料区）](../reference/README.md)
-- 完整系统教程（Python / 系统语言 / 混合编程 / MySQL / Linux / CTF 实战，六套）→ [tutorial/索引.md](../tutorial/索引.md)
+- 完整系统教程（Python / 系统语言 / 混合编程 / MySQL / Linux / CTF / 电子取证 / Wireshark / PWN，九套）→ [tutorial/索引.md](../tutorial/索引.md)

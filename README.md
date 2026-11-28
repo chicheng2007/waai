@@ -36,7 +36,7 @@
 - [第五部分 · Python 底座：七个台阶](#第五部分--python-底座七个台阶)
 - [第六部分 · AI 三阶段：从传统 ML 到 Agent](#第六部分--ai-三阶段从传统-ml-到-agent)
 - [第七部分 · 14 天实战：做出第一个作品](#第七部分--14-天实战做出第一个作品)
-- [第八部分 · 六套完整教程体系](#第八部分--六套完整教程体系)
+- [第八部分 · 九套完整教程体系](#第八部分--九套完整教程体系)
 - [第九部分 · 硬件与本地大模型环境](#第九部分--硬件与本地大模型环境)
 - [第十部分 · 书籍、课程与资源速查](#第十部分--书籍课程与资源速查)
 - [第十一部分 · 学习方法论与执行纪律](#第十一部分--学习方法论与执行纪律)
@@ -310,7 +310,7 @@
 |---|---|---|---|
 | ① 建立直觉 | 渗透测试、CTF、漏洞、攻击链是什么 | B站搜"网络安全入门科普"，看 5~10 个视频 | 1 周 |
 | ② Web 安全入门 | SQL 注入、XSS、CSRF、文件上传 | 本地搭 DVWA 靶场（DVWA + PHPstudy），照着教程复现 | 3~4 周 |
-| ③ 工具上手 | Burp Suite、Wireshark、Kali Linux | B站"Burp Suite 入门"、"Wireshark 抓包"教程 | 2~3 周 |
+| ③ 工具上手 | Burp Suite、Wireshark、Kali Linux | B站"Burp Suite 入门"、"Wireshark 抓包"教程；Wireshark 系统学看仓库内 [43 章教程](tutorial/08-Wireshark从入门到精通/README.md) | 2~3 周 |
 | ④ 打 CTF | Misc（杂项）、Web 签到题 | 平台：攻防世界（XCTF）、NSSCTF、CTFtime | 持续 |
 | ⑤ 进阶（大三再说） | 逆向、PWN、二进制漏洞 | 《逆向工程核心原理》、PWN 入门 | 大三 |
 
@@ -758,15 +758,11 @@ sec-log-analyzer/
 - [ ] 项目结构清晰、有 README、已上 GitHub
 
 全打勾，你就有了第一个能写进简历的 AI+网安实战项目。**只做当天，别焦虑后面；不会就问本地模型——这是你的超能力。**
-# 第八部分 · 六套完整教程体系
+# 第八部分 · 九套完整教程体系
 
-> 总入口见 [tutorial/索引.md](tutorial/索引.md)。仓库收录六套完整教程，合计 **185 章、约 120 万字**，都是零基础友好、代码驱动、每章有可运行代码 + 逐行解释 + 配套练习。
->
-> **另有两本独立成书的长篇实战教程**（均位于 `book/` 目录，各含完整目录导航 `SUMMARY.md`）：
-> - [《电子取证 AI / Agent 制作实战（CTF 辅助）》](book/README.md)（24 章，以电子取证为主线、CTF 为辅助训练场，[目录导航](book/SUMMARY.md)）。
-> - [《Wireshark 从入门到精通》](book/wireshark/README.md)（43 章，从协议基础到抓包过滤、协议解析、实战排障与安全分析，[目录导航](book/wireshark/SUMMARY.md)）。
+> 总入口见 [tutorial/索引.md](tutorial/索引.md)。仓库收录九套完整教程，均零基础友好、代码驱动、每章有可运行代码 + 逐行解释 + 配套练习。其中前六套合计 **185 章、约 120 万字**，另有电子取证 AI / Agent 实战 24 章、Wireshark 从入门到精通 43 章，以及 PWN 学院四套 151 个 MD（约 43 万字）。
 
-## 8.1 六套教程总览
+## 8.1 九套教程总览
 
 | 教程 | 规模 | 定位 | 什么时候学 |
 |---|---|---|---|
@@ -776,6 +772,9 @@ sec-log-analyzer/
 | **MySQL 数据底座** | 7 卷 33 章 | 用 MySQL 搭建 AI + 网安的数据底座 | 数据篇，Python 第二卷后按需 |
 | **Linux 系统底座** | 7 卷 33 章 | 承载一切落地的系统底座 | 底座篇，建议至少掌握前两卷 |
 | **CTF 实战篇** | 6 卷 33 章 | Web 漏洞 + Misc 杂项 + AI 辅助解题 | 实战篇，有一定基础后打靶 |
+| **电子取证 AI / Agent** | 24 章 | 以电子取证为主线、CTF 为辅助，做出取证作品 | 取证篇，学完 AI 与 Python 后按需深入 |
+| **Wireshark 从入门到精通** | 8 部分 43 章 | 协议解析 / 抓包过滤 / 流量分析 / 插件开发 | 工具篇，做流量分析与排障时查 |
+| **PWN 学院** | 4 套 151 个 MD | 硬核/游戏 × 基础/进阶，二进制漏洞利用 | 二进制篇，专攻 PWN 时按自己路线学 |
 
 > ⚠️ **学习顺序**：大二阶段先把 Python 主教程当绝对主线。系统语言里 C++ 保持手感即可，Rust/Go 大三后按方向再碰；混合编程是进阶内容，建议大三下 / 大四再系统学。MySQL 是**数据篇**、Linux 是**底座篇**——做日志分析、威胁情报、AI 训练部署时按需插入，Linux 第一、二卷尤其该先掌握。CTF 是**实战篇**——等你有一定 Web / Python 基础后再系统打靶，把前面能力在竞技场里检验一遍。**别同时开多线，会分散精力。**
 
@@ -860,7 +859,35 @@ sec-log-analyzer/
 
 **按方向选学**：Web → 第二、三卷 + 第五卷 + 第 28 章；Misc → 第四卷；AI 辅助 → 第 26 章；打靶实战 → 第五卷靶场搭建 + 第六卷综合实战。**所有攻防技术仅限 CTF 平台 / 自建靶场 / 授权环境。**
 
-## 8.8 配套工具文档
+## 8.8 取证篇 · 电子取证 AI / Agent（24 章）
+
+入口：[tutorial/07-电子取证AI-Agent实战/README.md](tutorial/07-电子取证AI-Agent实战/README.md) · [目录](tutorial/07-电子取证AI-Agent实战/SUMMARY.md)。写给网安学生的实战书，以**电子取证为主线、CTF 为辅助训练场**，按「认知 → 数据 → 模型 → Agent → 项目 → 进阶」六部分递进，主线案例是虚拟的「星海案」数据泄露事件（数据均为合法合成）。
+
+| 部分 | 内容 | 章 |
+|---|---|---|
+| 基础认知 | 为什么需要取证 AI、取证基础、AI 与大模型、环境与硬件 | 1–4 |
+| 数据篇 | 数据来源与采集、清洗标注、指令数据集、数据增强、实战构建数据集 | 5–9 |
+| 模型篇 | 微调原理、环境搭建、第一次微调、评估、调参踩坑、实战问答模型 | 10–15 |
+| Agent 篇 | Agent 是什么、函数调用、ReAct、记忆规划、实战 Agent 骨架 | 16–20 |
+| 实战项目 | 日志研判工具、恶意样本分析报告、多智能体取证协作 | 21–23 |
+| 进阶工程 | 部署、安全与职业路径 | 24 |
+
+## 8.9 工具篇 · Wireshark 从入门到精通（8 部分 43 章）
+
+入口：[tutorial/08-Wireshark从入门到精通/README.md](tutorial/08-Wireshark从入门到精通/README.md)。中文原创、零基础到实战的系统教程，从 OSI 模型讲到协议解析、高级分析、实战排障与插件开发，覆盖真实工作场景。
+
+| 部分 | 内容 | 章 |
+|---|---|---|
+| 入门基础 | 前言、协议基础、简介、安装配置、第一次抓包 | 1–5 |
+| 界面与操作 | 主界面、数据包列表、协议字节窗格、首选项、捕获选项 | 6–10 |
+| 过滤器与核心功能 | 捕获过滤器、显示过滤器基础/进阶、着色规则、保存导出 | 11–15 |
+| 协议深度解析 | 以太网 ARP、IPv4/v6、TCP/UDP、DNS/DHCP、HTTP、TLS 等 | 16–25 |
+| 高级功能 | 统计工具、流量图、专家信息、TLS 解密、tshark、性能分析 | 26–31 |
+| 实战应用 | 故障排查、典型故障案例、安全分析、渗透测试 | 32–35 |
+| 开发扩展 | Lua 插件、自定义协议解析、自动化分析、大规模抓包优化 | 36–39 |
+| 附录 | 过滤器速查、快捷键术语、FAQ、学习资源 | 40–43 |
+
+## 8.10 配套工具文档
 
 | 文档 | 什么时候用 |
 |---|---|
@@ -869,7 +896,18 @@ sec-log-analyzer/
 | [datasets/](datasets/README.md) | 250 份带攻击特征的练习日志，配实战计划练手 |
 | [checkin-log.md](checkin-log.md) | 每天学完追加一行，记录进度 |
 
-> 🎮 **独立专区 · PWN Academy《从零开始的 Pwner 生活》**：仓库还单独收录了一套 PWN / 二进制漏洞利用专题（[进入专区](pwn-academy/README.md)），内分四套——硬核基础 35 章 + 游戏基础 29 关 + 硬核进阶 20 章 + 游戏进阶 19 关。它**独立于上面六套体系、不计入章节编号**，想专攻 PWN 方向时按专区自己的路线学（零基础建议从游戏版 `03-core-game` 第 1 关入手）。
+## 8.11 二进制篇 · PWN 学院（4 套 151 个 MD）
+
+入口：[tutorial/09-PWN学院/README.md](tutorial/09-PWN学院/README.md)。从"完全没基础"到"能打现代堆题"，硬核版讲原理、游戏版讲人话，按需切换、组合学习。四套章节采用独立编号，不计入前八套的章节序列。
+
+| 分套 | 版本 | 定位 | 规模 |
+|---|---|---|---|
+| 01-core | 📖 基础·硬核版 | 系统全面，作为案头参考 | 35 章 + 附录 |
+| 02-deep | 🔬 进阶·硬核版 | 源码级原理、现代绕过、自动化 | 20 章 + 附录 |
+| 03-core-game | 🎮 基础·游戏版 | 《内存城》闯关比喻，零基础友好 | 29 关 + 附录 |
+| 04-deep-game | 🕹️ 进阶·游戏版 | 隐藏地图，游戏比喻讲源码/连招/AI 代打 | 19 关 + 附录 |
+
+**零基础建议**：从 03-core-game 第 1 关入手，概念不懂时翻 01-core 对应章节。所有练习须在自建靶场 / 授权环境进行。
 
 # 第九部分 · 硬件与本地大模型环境
 
@@ -1261,8 +1299,8 @@ Agent 是你给它目标、它自己拆任务调工具多步执行完成的东�
 | [`tools/`](tools/README.md) | Python 路线 + Git + CMD/PowerShell 手册 | 学某门语言 / 工具怎么用 |
 | [`reference/`](reference/README.md) | 书单 + 链接 + 硬件环境 | 查资料、找工具官网、配本地模型 |
 | [`roadmap/`](roadmap/README.md) | 软考 / ML / 深度学习 / Agent 分阶段路线 | 想知道"现在该学什么" |
-| [`tutorial/`](tutorial/索引.md) | 六套完整系统教程（Python / 系统语言 / 混合 / MySQL / Linux / CTF，卷按数字编号） | 想系统按章节深入某门技术 |
-| [`pwn-academy/`](pwn-academy/README.md) | **独立专区**：PWN Academy《从零开始的 Pwner 生活》，四套教程（硬核/游戏 × 基础/进阶），不计入六套体系 | 想专门攻 PWN / 二进制漏洞利用方向时 |
+| [`tutorial/`](tutorial/索引.md) | 九套完整系统教程（Python / 系统语言 / 混合 / MySQL / Linux / CTF / 电子取证 / Wireshark / PWN，卷按数字编号） | 想系统按章节深入某门技术 |
+| [`book/`](book/README.md) | 配套电子书（Python 编程从入门到实践、机器学习西瓜书等 PDF / EPUB） | 想读纸质书 / 电子书系统深化时 |
 | `datasets/` | 250 份带攻击特征的练习日志 | 做日志分析练习时 |
 
 本文开头的目录是总纲的导航；要进某个区，点上面表格里的 README 链接。
@@ -1410,15 +1448,17 @@ answer = resp.json()["choices"][0]["message"]["content"]
 
 | 我想…… | 去看 |
 |---|---|
-| 按分区浏览整个仓库 | [guides/](guides/README.md) · [tools/](tools/README.md) · [reference/](reference/README.md) · [roadmap/](roadmap/README.md) · [tutorial/](tutorial/索引.md) · [pwn-academy/](pwn-academy/README.md)（独立专区） |
+| 按分区浏览整个仓库 | [guides/](guides/README.md) · [tools/](tools/README.md) · [reference/](reference/README.md) · [roadmap/](roadmap/README.md) · [tutorial/](tutorial/索引.md) · [book/](book/README.md) |
 | 知道整体该按什么顺序推进 | [00 总览](roadmap/00-overview.md) |
 | 准备软考 | [01 软考期](roadmap/01-soft-exam.md) |
 | 入门机器学习 | [02 传统 ML](roadmap/02-ml-basics.md) |
 | 做深度学习 + 网安项目 | [03 深度学习](roadmap/03-deep-learning.md) |
 | 学大模型 / Agent | [04 大模型/Agent](roadmap/04-llm-agent.md) |
 | 快速做出第一个作品 | [START-HERE.md](START-HERE.md) |
-| 系统学（六套教程：Python/系统语言/混合/MySQL/Linux/CTF） | [tutorial/索引.md](tutorial/索引.md) |
-| 专攻 PWN / 二进制漏洞（独立专区） | [pwn-academy/README.md](pwn-academy/README.md) |
+| 系统学（九套教程：Python/系统语言/混合/MySQL/Linux/CTF/电子取证/Wireshark/PWN） | [tutorial/索引.md](tutorial/索引.md) |
+| 系统学电子取证 AI / Agent（24 章） | [tutorial/07-电子取证AI-Agent实战/README.md](tutorial/07-电子取证AI-Agent实战/README.md) |
+| 专攻 PWN / 二进制漏洞（第 9 套） | [tutorial/09-PWN学院/README.md](tutorial/09-PWN学院/README.md) |
+| 读配套电子书（Python / 机器学习） | [book/README.md](book/README.md) |
 | 补语法急救 | [SYNTAX-BOOTCAMP.md](guides/SYNTAX-BOOTCAMP.md) |
 | 查语法速查 | [SYNTAX-REFERENCE.md](guides/SYNTAX-REFERENCE.md) |
 | 练日志分析 | [datasets/](datasets/README.md) |
@@ -1426,6 +1466,7 @@ answer = resp.json()["choices"][0]["message"]["content"]
 | 配置硬件 / 本地模型 | [hardware-setup.md](reference/hardware-setup.md) |
 | 学 Git / 管理 GitHub 仓库 | [git-tutorial.md](tools/git-tutorial.md) |
 | 学 CMD / PowerShell 命令行 | [cmd-powershell-tutorial.md](tools/cmd-powershell-tutorial.md) |
+| 学 Wireshark / 流量分析（43 章） | [tutorial/08-Wireshark从入门到精通/README.md](tutorial/08-Wireshark从入门到精通/README.md) |
 | 每天打卡 | [checkin-log.md](checkin-log.md) |
 
 ---

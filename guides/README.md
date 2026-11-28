@@ -21,6 +21,7 @@
 
 - [START-HERE.md（14 天实战）](../START-HERE.md) —— 在真实日志分析任务里练语法
 - [tools/（工具路线）](../tools/README.md) —— Python / Git / 命令行的系统学习
+- [tutorial/（九套系统教程）](../tutorial/索引.md) —— 含电子取证 AI / Agent 24 章、Wireshark 43 章、PWN 四套
 - [README.md 总纲](../README.md) —— 软考 / 网安 / AI 三线全局路线
 
 > ⚠️ 别在语法上死磕太久。你的主线是软考 + 网安 + AI，语法够读代码就往前走，剩下的在实战里补。详见总纲第五部分"Python 底座"。
